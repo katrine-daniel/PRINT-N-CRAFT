@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { servicesData } from '../data/servicesData';
-import { rateCardData, rateCardCategories } from '../data/rateCardData';
 import { 
   Zap, Sun, Printer, Layers, Scissors, Cpu, 
   Shield, Building, Bookmark, Gift, Sparkles, Maximize, 
-  Search, ArrowRight, LayoutGrid, TableProperties, Tag, CheckCircle2
+  Search, ArrowRight
 } from 'lucide-react';
 
 const iconMap = {
@@ -12,29 +11,109 @@ const iconMap = {
   Shield, Building, Bookmark, Gift, Sparkles, Maximize
 };
 
+// Category-based thematic color config
+const categoryColors = {
+  'Signage': {
+    bg: 'bg-sky-50',
+    border: 'border-sky-200',
+    hoverBorder: 'hover:border-sky-400',
+    iconBg: 'bg-sky-100',
+    iconText: 'text-sky-600',
+    iconHoverBg: 'group-hover:bg-sky-500',
+    labelText: 'text-sky-600',
+    labelBg: 'bg-sky-50',
+    titleHover: 'group-hover:text-sky-600',
+    tagBg: 'bg-sky-100/70',
+    tagText: 'text-sky-700',
+    badgeBg: 'bg-sky-100',
+    badgeText: 'text-sky-800',
+    badgeBorder: 'border-sky-200',
+    footerBtn: 'hover:bg-sky-500',
+  },
+  'Printing': {
+    bg: 'bg-amber-50',
+    border: 'border-amber-200',
+    hoverBorder: 'hover:border-amber-400',
+    iconBg: 'bg-amber-100',
+    iconText: 'text-amber-600',
+    iconHoverBg: 'group-hover:bg-amber-500',
+    labelText: 'text-amber-600',
+    labelBg: 'bg-amber-50',
+    titleHover: 'group-hover:text-amber-600',
+    tagBg: 'bg-amber-100/70',
+    tagText: 'text-amber-700',
+    badgeBg: 'bg-amber-100',
+    badgeText: 'text-amber-800',
+    badgeBorder: 'border-amber-200',
+    footerBtn: 'hover:bg-amber-500',
+  },
+  'Cutting': {
+    bg: 'bg-emerald-50',
+    border: 'border-emerald-200',
+    hoverBorder: 'hover:border-emerald-400',
+    iconBg: 'bg-emerald-100',
+    iconText: 'text-emerald-600',
+    iconHoverBg: 'group-hover:bg-emerald-500',
+    labelText: 'text-emerald-600',
+    labelBg: 'bg-emerald-50',
+    titleHover: 'group-hover:text-emerald-600',
+    tagBg: 'bg-emerald-100/70',
+    tagText: 'text-emerald-700',
+    badgeBg: 'bg-emerald-100',
+    badgeText: 'text-emerald-800',
+    badgeBorder: 'border-emerald-200',
+    footerBtn: 'hover:bg-emerald-500',
+  },
+  'Architecture': {
+    bg: 'bg-violet-50',
+    border: 'border-violet-200',
+    hoverBorder: 'hover:border-violet-400',
+    iconBg: 'bg-violet-100',
+    iconText: 'text-violet-600',
+    iconHoverBg: 'group-hover:bg-violet-500',
+    labelText: 'text-violet-600',
+    labelBg: 'bg-violet-50',
+    titleHover: 'group-hover:text-violet-600',
+    tagBg: 'bg-violet-100/70',
+    tagText: 'text-violet-700',
+    badgeBg: 'bg-violet-100',
+    badgeText: 'text-violet-800',
+    badgeBorder: 'border-violet-200',
+    footerBtn: 'hover:bg-violet-500',
+  },
+  'Gifts & Office': {
+    bg: 'bg-rose-50',
+    border: 'border-rose-200',
+    hoverBorder: 'hover:border-rose-400',
+    iconBg: 'bg-rose-100',
+    iconText: 'text-rose-600',
+    iconHoverBg: 'group-hover:bg-rose-500',
+    labelText: 'text-rose-600',
+    labelBg: 'bg-rose-50',
+    titleHover: 'group-hover:text-rose-600',
+    tagBg: 'bg-rose-100/70',
+    tagText: 'text-rose-700',
+    badgeBg: 'bg-rose-100',
+    badgeText: 'text-rose-800',
+    badgeBorder: 'border-rose-200',
+    footerBtn: 'hover:bg-rose-500',
+  },
+};
+
+const defaultColors = categoryColors['Signage'];
+
 export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
-  const [viewMode, setViewMode] = useState('grid'); // 'grid' | 'rates'
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeRateCategory, setActiveRateCategory] = useState('all');
 
   const categories = ['All', 'Signage', 'Printing', 'Cutting', 'Architecture', 'Gifts & Office'];
 
-  // Filter services for Grid View
   const filteredServices = servicesData.filter(service => {
     const matchesCategory = activeCategory === 'All' || service.category === activeCategory;
     const matchesSearch = service.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                           service.shortDesc.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           service.materials.some(m => m.toLowerCase().includes(searchQuery.toLowerCase()));
     return matchesCategory && matchesSearch;
-  });
-
-  // Filter rate items for Table View
-  const filteredRates = rateCardData.filter(item => {
-    const matchesCat = activeRateCategory === 'all' || item.category === activeRateCategory;
-    const matchesSearch = item.product.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          item.categoryName.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCat && matchesSearch;
   });
 
   return (
@@ -44,229 +123,118 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="text-xs font-bold uppercase tracking-widest text-brand-cyan px-3.5 py-1 rounded-full bg-sky-50 border border-sky-100">
-            Printing, Signages & Rate List
+            12 Specializations
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">
-            Our Services & Transparent Rate Card
+            Our Printing & Crafting Services
           </h2>
           <p className="text-slate-600 text-sm mt-2">
-            Explore our 12 core manufacturing specializations or browse full transparent rate cards with instant estimation.
+            End-to-end manufacturing — illuminated signages, 3D laser routing, ACP facades, and custom gifts.
           </p>
-
-          {/* View Toggle Tabs */}
-          <div className="inline-flex items-center bg-slate-200/80 p-1.5 rounded-2xl mt-6 border border-slate-300 shadow-inner gap-1">
-            <button
-              onClick={() => setViewMode('grid')}
-              className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all ${
-                viewMode === 'grid'
-                  ? 'bg-brand-cyan text-white shadow-md ring-2 ring-brand-cyan/30'
-                  : 'text-slate-600 hover:text-brand-cyan hover:bg-sky-50'
-              }`}
-            >
-              <span>Services Grid</span>
-            </button>
-            <button
-              onClick={() => setViewMode('rates')}
-              className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all ${
-                viewMode === 'rates'
-                  ? 'bg-brand-magenta text-white shadow-md ring-2 ring-brand-magenta/30'
-                  : 'text-slate-600 hover:text-brand-magenta hover:bg-rose-50'
-              }`}
-            >
-              <TableProperties className="w-4 h-4" />
-              <span>Transparent Product & Service Rates</span>
-            </button>
-          </div>
         </div>
 
         {/* Filter Bar & Search */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8 bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
-          
-          {/* Category Tabs based on View Mode */}
-          {viewMode === 'grid' ? (
-            <div className="flex flex-wrap items-center gap-1.5 w-full md:w-auto">
-              {categories.map((cat) => (
+          <div className="flex flex-wrap items-center gap-1.5 w-full md:w-auto">
+            {categories.map((cat) => {
+              const c = categoryColors[cat] || null;
+              const isActive = activeCategory === cat;
+              return (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
-                    activeCategory === cat
-                      ? 'bg-brand-cyan text-white shadow-sm'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all border ${
+                    cat === 'All'
+                      ? isActive
+                        ? 'bg-slate-900 text-white border-slate-900'
+                        : 'text-slate-600 border-transparent hover:bg-slate-100'
+                      : isActive
+                        ? `${c.bg} ${c.labelText} ${c.border} shadow-sm`
+                        : `text-slate-600 border-transparent hover:${c.bg} hover:${c.labelText}`
                   }`}
                 >
                   {cat}
                 </button>
-              ))}
-            </div>
-          ) : (
-            <div className="flex flex-wrap items-center gap-1.5 w-full md:w-auto">
-              {rateCardCategories.map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveRateCategory(cat.id)}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
-                    activeRateCategory === cat.id
-                      ? 'bg-brand-cyan text-white shadow-sm'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
-                  }`}
-                >
-                  {cat.name}
-                </button>
-              ))}
-            </div>
-          )}
+              );
+            })}
+          </div>
 
           {/* Search Box */}
           <div className="relative w-full md:w-72">
             <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder={viewMode === 'grid' ? "Search services or materials..." : "Search products & rate items..."}
+              placeholder="Search services or materials..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-9 pr-4 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:border-brand-cyan"
             />
           </div>
-
         </div>
 
-        {/* VIEW MODE 1: SERVICES CARDS GRID */}
-        {viewMode === 'grid' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredServices.map((service) => {
-              const IconComponent = iconMap[service.iconName] || Zap;
+        {/* Services Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredServices.map((service) => {
+            const IconComponent = iconMap[service.iconName] || Zap;
+            const c = categoryColors[service.category] || defaultColors;
 
-              return (
-                <div
-                  key={service.id}
-                  className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-cyan hover:shadow-clean-md transition-all duration-300 flex flex-col justify-between group"
-                >
-                  <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-11 h-11 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center text-brand-cyan group-hover:bg-brand-cyan group-hover:text-white transition-all">
-                        <IconComponent className="w-5 h-5" />
-                      </div>
-                      <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
-                        {service.badge}
-                      </span>
+            return (
+              <div
+                key={service.id}
+                className={`${c.bg} rounded-2xl p-6 border ${c.border} ${c.hoverBorder} hover:shadow-clean-md transition-all duration-300 flex flex-col justify-between group`}
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className={`w-11 h-11 rounded-xl ${c.iconBg} border ${c.border} flex items-center justify-center ${c.iconText} ${c.iconHoverBg} group-hover:text-white transition-all`}>
+                      <IconComponent className="w-5 h-5" />
                     </div>
-
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-brand-cyan">
-                      {service.category}
+                    <span className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${c.badgeBg} ${c.badgeText} border ${c.badgeBorder}`}>
+                      {service.badge}
                     </span>
-                    <h3 className="text-lg font-bold text-slate-900 mt-0.5 group-hover:text-brand-cyan transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-xs text-slate-600 mt-2 line-clamp-3 leading-relaxed">
-                      {service.shortDesc}
-                    </p>
-
-                    {/* Material & Feature tags */}
-                    <div className="flex flex-wrap gap-1.5 mt-4">
-                      {service.materials.map((mat, i) => (
-                        <span key={i} className="text-[10px] px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 font-medium">
-                          {mat}
-                        </span>
-                      ))}
-                    </div>
                   </div>
 
-                  {/* Footer Action */}
-                  <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <div>
-                      <span className="text-[10px] text-slate-400 font-medium block">Starting Rate</span>
-                      <span className="text-xs font-bold text-slate-900">
-                        ₹{service.estimatedRatePerSqFt} <span className="text-[9px] text-slate-500 font-normal">/ sq.ft approx</span>
-                      </span>
-                    </div>
+                  <span className={`text-[10px] font-bold uppercase tracking-widest ${c.labelText}`}>
+                    {service.category}
+                  </span>
+                  <h3 className={`text-lg font-bold text-slate-900 mt-0.5 ${c.titleHover} transition-colors`}>
+                    {service.title}
+                  </h3>
+                  <p className="text-xs text-slate-600 mt-2 line-clamp-3 leading-relaxed">
+                    {service.shortDesc}
+                  </p>
 
-                    <button
-                      onClick={() => onSelectService(service)}
-                      className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-brand-cyan hover:text-white text-xs font-bold text-slate-800 transition-all flex items-center space-x-1"
-                    >
-                      <span>Full Specs</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
+                  {/* Material tags */}
+                  <div className="flex flex-wrap gap-1.5 mt-4">
+                    {service.materials.map((mat, i) => (
+                      <span key={i} className={`text-[10px] px-2 py-0.5 rounded-md ${c.tagBg} ${c.tagText} font-medium`}>
+                        {mat}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              );
-            })}
-          </div>
-        )}
 
-        {/* VIEW MODE 2: TRANSPARENT PRODUCT & SERVICE RATES TABLE */}
-        {viewMode === 'rates' && (
-          <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-            <div className="px-6 py-4 bg-slate-900 text-white flex items-center justify-between flex-wrap gap-2">
-              <div className="flex items-center space-x-2">
-                <Tag className="w-4 h-4 text-brand-cyan" />
-                <h3 className="text-sm font-bold">Standard Transparent Product Rates ({filteredRates.length} Items)</h3>
+                {/* Footer Action */}
+                <div className="mt-6 pt-4 border-t border-white/60 flex items-center justify-between">
+                  <div>
+                    <span className="text-[10px] text-slate-400 font-medium block">Starting Rate</span>
+                    <span className={`text-xs font-bold ${c.labelText}`}>
+                      ₹{service.estimatedRatePerSqFt} <span className="text-[9px] text-slate-500 font-normal">/ sq.ft approx</span>
+                    </span>
+                  </div>
+
+                  <button
+                    onClick={() => onSelectService(service)}
+                    className={`px-3 py-1.5 rounded-lg bg-white/80 ${c.footerBtn} hover:text-white ${c.labelText} text-xs font-bold border ${c.border} transition-all flex items-center space-x-1`}
+                  >
+                    <span>Full Specs</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+
               </div>
-              <span className="text-[11px] text-slate-400">All rates in INR (₹) GST & Installation extra where specified</span>
-            </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="bg-slate-100 border-b border-slate-200 text-[11px] font-bold text-slate-600 uppercase tracking-wider">
-                    <th className="py-3 px-4">#</th>
-                    <th className="py-3 px-4">Product / Service Specification</th>
-                    <th className="py-3 px-4">Category</th>
-                    <th className="py-3 px-4">Unit</th>
-                    <th className="py-3 px-4 text-right">Standard Rate</th>
-                    <th className="py-3 px-4 text-center">Action</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100 text-xs text-slate-700">
-                  {filteredRates.map((item, idx) => (
-                    <tr key={idx} className="hover:bg-slate-50/80 transition-colors">
-                      <td className="py-3 px-4 text-slate-400 font-mono text-[11px]">{idx + 1}</td>
-                      <td className="py-3 px-4 font-bold text-slate-900 flex items-center space-x-2">
-                        <span>{item.product}</span>
-                        {item.badge && (
-                          <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200">
-                            {item.badge}
-                          </span>
-                        )}
-                      </td>
-                      <td className="py-3 px-4">
-                        <span className="text-[10px] px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 font-semibold">
-                          {item.categoryName}
-                        </span>
-                      </td>
-                      <td className="py-3 px-4 text-slate-500 font-medium">{item.unit || item.quantity}</td>
-                      <td className="py-3 px-4 text-right font-black text-slate-900">
-                        {item.rateText ? item.rateText : `₹${item.rate.toLocaleString('en-IN')}`}
-                      </td>
-                      <td className="py-3 px-4 text-center">
-                        <button
-                          onClick={() => onOpenEstimate(item.product)}
-                          className="px-3 py-1 rounded-lg bg-slate-900 hover:bg-brand-cyan text-white text-[11px] font-bold transition-all"
-                        >
-                          Estimate Quote
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between text-xs text-slate-600">
-              <div className="flex items-center space-x-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                <span>Need custom dimensions, bulk quantities, or site installation?</span>
-              </div>
-              <button
-                onClick={() => onOpenEstimate()}
-                className="px-4 py-1.5 rounded-lg bg-brand-cyan hover:bg-slate-900 text-white font-bold text-xs transition-all"
-              >
-                Use Rate Estimator
-              </button>
-            </div>
-          </div>
-        )}
+            );
+          })}
+        </div>
 
       </div>
     </section>
