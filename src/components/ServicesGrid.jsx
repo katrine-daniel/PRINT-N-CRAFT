@@ -54,13 +54,13 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
           </p>
 
           {/* View Toggle Tabs */}
-          <div className="inline-flex items-center bg-slate-200/80 p-1.5 rounded-2xl mt-6 border border-slate-300 shadow-inner">
+          <div className="inline-flex items-center bg-slate-200/80 p-1.5 rounded-2xl mt-6 border border-slate-300 shadow-inner gap-1">
             <button
               onClick={() => setViewMode('grid')}
-              className={`flex items-center space-x-2 px-5 py-2 rounded-xl text-xs font-bold transition-all ${
+              className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all ${
                 viewMode === 'grid'
-                  ? 'bg-slate-900 text-white shadow-md'
-                  : 'text-slate-700 hover:text-slate-900'
+                  ? 'bg-brand-cyan text-white shadow-md ring-2 ring-brand-cyan/30'
+                  : 'text-slate-600 hover:text-brand-cyan hover:bg-sky-50'
               }`}
             >
               <LayoutGrid className="w-4 h-4" />
@@ -68,10 +68,10 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
             </button>
             <button
               onClick={() => setViewMode('rates')}
-              className={`flex items-center space-x-2 px-5 py-2 rounded-xl text-xs font-bold transition-all ${
+              className={`flex items-center space-x-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all ${
                 viewMode === 'rates'
-                  ? 'bg-slate-900 text-white shadow-md'
-                  : 'text-slate-700 hover:text-slate-900'
+                  ? 'bg-brand-magenta text-white shadow-md ring-2 ring-brand-magenta/30'
+                  : 'text-slate-600 hover:text-brand-magenta hover:bg-rose-50'
               }`}
             >
               <TableProperties className="w-4 h-4" />
