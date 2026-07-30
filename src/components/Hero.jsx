@@ -59,12 +59,12 @@ export default function Hero({ onOpenEstimate }) {
                 Explore 12 Services
               </a>
               <a
-                href="tel:+917703967979"
+                href="tel:+918826239697"
                 className="p-3 rounded-lg bg-slate-100 border border-slate-200 text-brand-cyan hover:bg-brand-cyan hover:text-white transition-all flex items-center space-x-2 text-xs font-bold"
-                title="Call +91 7703967979"
+                title="Call +91 8826239697"
               >
                 <PhoneCall className="w-4 h-4" />
-                <span>+91 7703967979</span>
+                <span>+91 8826239697</span>
               </a>
             </div>
 

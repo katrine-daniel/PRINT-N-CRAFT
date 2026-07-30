@@ -52,23 +52,23 @@ export default function ContactSection() {
               
               <div className="space-y-2">
                 <a
-                  href="tel:+917703967979"
+                  href="tel:+918826239697"
                   className="flex items-center justify-between p-3 rounded-xl bg-sky-50 border border-sky-200 hover:border-brand-cyan text-slate-900 font-bold text-xs transition-all"
                 >
                   <div>
                     <span className="text-[10px] text-brand-cyan font-bold block">Primary Sales Line</span>
-                    <span>+91 7703967979</span>
+                    <span>+91 8826239697</span>
                   </div>
                   <Phone className="w-4 h-4 text-brand-cyan" />
                 </a>
 
                 <a
-                  href="tel:+918826239697"
+                  href="tel:+917703967979"
                   className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-cyan text-slate-900 font-bold text-xs transition-all"
                 >
                   <div>
                     <span className="text-[10px] text-slate-400 font-medium block">Secondary Line</span>
-                    <span>+91 8826239697</span>
+                    <span>+91 7703967979</span>
                   </div>
                   <Phone className="w-4 h-4 text-brand-cyan" />
                 </a>

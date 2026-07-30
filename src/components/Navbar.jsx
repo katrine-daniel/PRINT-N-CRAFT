@@ -68,15 +68,15 @@ export default function Navbar({ onOpenEstimate }) {
               <ChevronRight className="w-4 h-4" />
             </button>
             <a
-              href="tel:+917703967979"
+              href="tel:+918826239697"
               className="p-2 rounded-lg bg-slate-100 text-slate-700 hover:bg-sky-50 hover:text-brand-cyan border border-slate-200 transition-all flex items-center space-x-1"
               title="Call Sales Team"
             >
               <Phone className="w-4 h-4 text-brand-cyan" />
-              <span className="text-xs font-bold hidden xl:inline">+91 7703967979</span>
+              <span className="text-xs font-bold hidden xl:inline">+91 8826239697</span>
             </a>
             <a
-              href="https://wa.me/917703967979?text=Hi%20Print%20N%20Craft,%20I%20want%20to%20inquire%20about%20printing/signage%20services."
+              href="https://wa.me/918826239697?text=Hi%20Print%20N%20Craft,%20I%20want%20to%20inquire%20about%20printing/signage%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg bg-slate-100 text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 border border-slate-200 transition-all"
@@ -124,11 +124,11 @@ export default function Navbar({ onOpenEstimate }) {
               Calculate Quote Now
             </button>
             <a
-              href="tel:+917703967979"
+              href="tel:+918826239697"
               className="w-full py-2.5 rounded-lg bg-slate-100 border border-slate-200 text-slate-900 font-bold text-xs flex items-center justify-center space-x-2"
             >
               <Phone className="w-4 h-4 text-brand-cyan" />
-              <span>Call: +91 7703967979</span>
+              <span>Call: +91 8826239697</span>
             </a>
           </div>
         </div>

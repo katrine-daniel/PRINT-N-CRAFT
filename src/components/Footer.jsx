@@ -64,13 +64,13 @@ export default function Footer() {
           <div>
             <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider mb-4 font-sans">Contact Direct</h4>
             <div className="space-y-3 text-xs">
-              <a href="tel:+917703967979" className="block hover:text-brand-cyan transition-colors font-semibold text-slate-900">
+              <a href="tel:+918826239697" className="block hover:text-brand-cyan transition-colors font-semibold text-slate-900">
                 <span className="text-[10px] text-brand-cyan block">Primary Helpline:</span>
-                +91 7703967979
-              </a>
-              <a href="tel:+918826239697" className="block hover:text-brand-cyan transition-colors">
-                <span className="text-[10px] text-slate-400 block">Helpline 2:</span>
                 +91 8826239697
+              </a>
+              <a href="tel:+917703967979" className="block hover:text-brand-cyan transition-colors">
+                <span className="text-[10px] text-slate-400 block">Helpline 2:</span>
+                +91 7703967979
               </a>
               <a href="tel:+919654737317" className="block hover:text-brand-cyan transition-colors">
                 <span className="text-[10px] text-slate-400 block">Helpline 3:</span>
