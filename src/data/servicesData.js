@@ -16,7 +16,7 @@ export const servicesData = [
     materials: ['Acrylic (135/inch)', 'ACP Cladding (250/sqft)', '3D ACP Acrylic (750/sqft)', 'LED Modules'],
     estimatedRatePerSqFt: 750,
     badge: 'Best Seller',
-    image: '/led_channel.png'
+    image: './led_channel.png'
   },
   {
     id: 'gsb-sign-board',
@@ -35,7 +35,7 @@ export const servicesData = [
     materials: ['Back Lit Flex', 'GI Frame Box', 'LED/Tube Lights'],
     estimatedRatePerSqFt: 220,
     badge: 'Popular',
-    image: '/acp_store.png'
+    image: './acp_store.png'
   },
   {
     id: 'flex-board-design',
@@ -54,7 +54,7 @@ export const servicesData = [
     materials: ['Normal Flex (₹10)', 'Black Back Flex (₹18)', 'Star Flex (₹35)'],
     estimatedRatePerSqFt: 10,
     badge: 'Economical',
-    image: '/acp_store.png'
+    image: './acp_store.png'
   },
   {
     id: 'vinyl-printing',
@@ -73,7 +73,7 @@ export const servicesData = [
     materials: ['Vinyl (₹40)', 'Sunboard 3mm/5mm', 'One Way Vision (₹60)', 'UV Vinyl'],
     estimatedRatePerSqFt: 40,
     badge: 'Versatile',
-    image: '/hero_banner.png'
+    image: './hero_banner.png'
   },
   {
     id: 'laser-cutting',
@@ -92,7 +92,7 @@ export const servicesData = [
     materials: ['MDF Board', 'PVC Board', 'HDHMR Board'],
     estimatedRatePerSqFt: 120,
     badge: 'Precision',
-    image: '/cnc_wood.png'
+    image: './cnc_wood.png'
   },
   {
     id: 'ss-sign-board',
@@ -111,7 +111,7 @@ export const servicesData = [
     materials: ['SS 304 Grade', 'Titanium Gold', 'Acrylic Base', 'Halo LEDs'],
     estimatedRatePerSqFt: 250,
     badge: 'Luxury',
-    image: '/ss_letters.png'
+    image: './ss_letters.png'
   },
   {
     id: 'acp-cladding',
@@ -130,7 +130,7 @@ export const servicesData = [
     materials: ['PVDF ACP Sheet', 'GI Framing', 'Silicone Sealant'],
     estimatedRatePerSqFt: 250,
     badge: 'Architectural',
-    image: '/acp_store.png'
+    image: './acp_store.png'
   },
   {
     id: 'name-plate',
@@ -149,7 +149,7 @@ export const servicesData = [
     materials: ['Cast Acrylic', 'Vinyl Print', 'Brass Studs'],
     estimatedRatePerSqFt: 450,
     badge: 'Custom',
-    image: '/ss_letters.png'
+    image: './ss_letters.png'
   },
   {
     id: 'neon-signages',
@@ -168,7 +168,7 @@ export const servicesData = [
     materials: ['12V Silicon LED Flex', 'Acrylic Sheet', 'Power Adapter'],
     estimatedRatePerSqFt: 550,
     badge: 'Trending',
-    image: '/led_neon.png'
+    image: './led_neon.png'
   },
   {
     id: 'readymade-lollipops',
@@ -187,6 +187,6 @@ export const servicesData = [
     materials: ['Acrylic Disc', 'Metal Bracket', 'Aluminum Standy Frame'],
     estimatedRatePerSqFt: 1800,
     badge: 'Readymade',
-    image: '/led_channel.png'
+    image: './led_channel.png'
   }
 ];

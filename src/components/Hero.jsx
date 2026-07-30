@@ -90,7 +90,7 @@ export default function Hero({ onOpenEstimate }) {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-clean-lg bg-slate-100">
               <img
-                src="/hero_banner.png"
+                src="./hero_banner.png"
                 alt="Print N Craft Signage Showcase"
                 className="w-full h-[380px] sm:h-[420px] object-cover"
               />
