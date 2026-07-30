@@ -5,7 +5,6 @@ import AboutSection from './components/AboutSection';
 import VisionMissionValues from './components/VisionMissionValues';
 import ServicesGrid from './components/ServicesGrid';
 import ServiceModal from './components/ServiceModal';
-import RateCardSection from './components/RateCardSection';
 import EstimateCalculator from './components/EstimateCalculator';
 import ClientsSection from './components/ClientsSection';
 import PortfolioGallery from './components/PortfolioGallery';
@@ -41,7 +40,6 @@ export default function App() {
           onSelectService={(service) => setSelectedService(service)} 
           onOpenEstimate={(id) => handleOpenEstimate(id)} 
         />
-        <RateCardSection onOpenEstimate={() => handleOpenEstimate()} />
         <EstimateCalculator preselectedServiceId={estimateServiceId} />
         <ClientsSection />
         <PortfolioGallery onOpenEstimate={() => handleOpenEstimate()} />

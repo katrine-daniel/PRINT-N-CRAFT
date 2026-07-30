@@ -16,8 +16,7 @@ export default function Navbar({ onOpenEstimate }) {
   const navLinks = [
     { name: 'Home', href: '#hero' },
     { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Price List', href: '#rate-card' },
+    { name: 'Services & Rates', href: '#services' },
     { name: 'Rate Estimator', href: '#calculator' },
     { name: 'Clients', href: '#clients' },
     { name: 'Portfolio', href: '#portfolio' },
