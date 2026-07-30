@@ -63,7 +63,6 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
                   : 'text-slate-600 hover:text-brand-cyan hover:bg-sky-50'
               }`}
             >
-              <LayoutGrid className="w-4 h-4" />
               <span>Services Grid</span>
             </button>
             <button
