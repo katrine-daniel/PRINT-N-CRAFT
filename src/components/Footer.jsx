@@ -18,17 +18,19 @@ export default function Footer() {
           
           {/* Col 1 Brand */}
           <div className="lg:col-span-2 space-y-4">
-            <a href="#hero" className="flex items-center space-x-3">
-              <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-slate-900 text-white font-bold">
-                <Printer className="w-5 h-5" />
-              </div>
+            <a href="#hero" className="flex items-center space-x-3 group">
+              <img 
+                src="./cmyk_logo.jpg" 
+                alt="Print N Craft CMYK Logo" 
+                className="w-9 h-9 object-contain shrink-0" 
+              />
               <div>
-                <div className="flex items-baseline space-x-1">
-                  <span className="text-lg font-black tracking-tight text-slate-900">PRINT</span>
-                  <span className="text-lg font-black tracking-tight text-brand-cyan">N</span>
-                  <span className="text-lg font-black tracking-tight text-brand-magenta">CRAFT</span>
+                <div className="flex items-baseline space-x-1 font-black text-lg tracking-tight leading-none font-sans">
+                  <span className="text-[#0E3A60]">PRINT</span>
+                  <span className="text-[#CF8332] ml-0.5">N</span>
+                  <span className="text-[#CF8332] ml-0.5">CRAFT</span>
                 </div>
-                <p className="text-[9px] uppercase tracking-widest text-slate-400 font-semibold">Your Branding, Our Priority</p>
+                <p className="text-[10px] text-slate-500 font-medium tracking-tight mt-0.5">Your branding, our priority</p>
               </div>
             </a>
 
