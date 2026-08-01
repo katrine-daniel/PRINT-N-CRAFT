@@ -41,7 +41,6 @@ export default function Footer() {
               <li><a href="#about" className="hover:text-brand-cyan transition-colors">About Company</a></li>
               <li><a href="#services" className="hover:text-brand-cyan transition-colors">All 12 Services</a></li>
               <li><a href="#calculator" className="hover:text-brand-cyan transition-colors">Instant Rate Estimator</a></li>
-              <li><a href="#portfolio" className="hover:text-brand-cyan transition-colors">Work Portfolio</a></li>
               <li><a href="#contact" className="hover:text-brand-cyan transition-colors">Contact Us</a></li>
               <li>
                 <a 
