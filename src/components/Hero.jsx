@@ -14,7 +14,7 @@ export default function Hero({ onOpenEstimate }) {
             {/* Top Pill Badge */}
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700">
               <span className="w-2 h-2 rounded-full bg-brand-cyan"></span>
-              <span>Gurugram's Premier Printing & Signage Hub Since 2012</span>
+              <span>Gurugram's Premier Printing & Signage Hub <span className="text-[10px] text-slate-500 font-normal ml-0.5">Since 2012</span></span>
             </div>
 
             {/* Headline */}
@@ -25,7 +25,7 @@ export default function Hero({ onOpenEstimate }) {
 
             {/* Paragraph */}
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl font-normal leading-relaxed">
-              From <strong className="text-slate-900 font-semibold">3D LED Channel Letters</strong> and <strong className="text-slate-900 font-semibold">Neon Signages</strong> to <strong className="text-slate-900 font-semibold">Laser Cutting, CNC Carving, ACP Facades</strong>, and <strong className="text-slate-900 font-semibold">Custom Corporate Gifts</strong>.
+              From <span className="text-slate-900 font-medium">3D LED Channel Letters</span> and <span className="text-slate-900 font-medium">Neon Signages</span> to <span className="text-slate-900 font-medium">Laser Cutting, CNC Carving, ACP Facades</span>, and <span className="text-slate-900 font-medium">Custom Corporate Gifts</span>.
             </p>
 
             {/* Bullets */}
@@ -72,7 +72,7 @@ export default function Hero({ onOpenEstimate }) {
             <div className="pt-8 border-t border-slate-100 grid grid-cols-3 gap-4">
               <div>
                 <p className="text-2xl sm:text-3xl font-black text-slate-900 font-sans">12+</p>
-                <p className="text-xs text-slate-500 font-medium">Years Excellence (2012)</p>
+                <p className="text-[10px] text-slate-400 font-medium">Years Excellence (2012)</p>
               </div>
               <div>
                 <p className="text-2xl sm:text-3xl font-black text-brand-cyan font-sans">5000+</p>

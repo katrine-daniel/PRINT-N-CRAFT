@@ -7,8 +7,8 @@ export default function EstimateCalculator({ preselectedServiceId }) {
   const [width, setWidth] = useState('4');
   const [height, setHeight] = useState('3');
   const [quantity, setQuantity] = useState(1);
-  const [includeLed, setIncludeLed] = useState(true);
-  const [includeInstallation, setIncludeInstallation] = useState(true);
+  const [includeLed, setIncludeLed] = useState(false);
+  const [includeInstallation, setIncludeInstallation] = useState(false);
 
   useEffect(() => {
     if (preselectedServiceId) {

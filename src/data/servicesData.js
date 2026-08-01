@@ -28,7 +28,7 @@ export const servicesData = [
     fullDesc: `GSB (Glow Sign Board) is the classic retail signboard for street visibility. Heavy-duty GI box frames enclosed with tube or LED lighting, overlaid with high-grade backlit flex prints.`,
     features: [
       'Heavy-duty anti-rust iron box frame structure',
-      'Backlit flex print (65/sqft) facing',
+      'Backlit flex print facing',
       'Uniform internal illumination with zero dark shadows',
       'Complete ready-to-mount GSB Board @ ₹220/sqft'
     ],
@@ -39,7 +39,7 @@ export const servicesData = [
   },
   {
     id: 'flex-board-design',
-    title: 'Flex Board Printing (Normal / Star / Black Back)',
+    title: 'Flex Board Design & Printing',
     category: 'Printing',
     iconName: 'Printer',
     tagline: 'Large format outdoor promotional flex banners & event boards',
@@ -77,21 +77,40 @@ export const servicesData = [
   },
   {
     id: 'laser-cutting',
-    title: 'CNC Jaali Cutting (MDF / PVC / HDHMR)',
+    title: 'Laser Cutting & Engraving',
     category: 'Cutting',
     iconName: 'Scissors',
-    tagline: 'Precision 2D & 3D CNC lattice & decorative Jaali cutting',
+    tagline: 'High-precision CO2 laser cutting for acrylic, wood & metal',
+    shortDesc: 'Precision laser cutting and engraving on acrylic, wood, leather, and metal sheets with micron accuracy.',
+    fullDesc: `Our industrial CO2 laser cutting machines execute intricate vector designs, custom silhouettes, stencil cutouts, and clear flame-polished acrylic shapes.`,
+    features: [
+      'Acrylic Laser Cutting (2mm to 20mm thickness)',
+      'MDF & Wood Sheet Laser Cutting & Stencil Work',
+      'High-speed intricate vector engraving & marking',
+      'Flame-polished smooth acrylic edge finishing'
+    ],
+    materials: ['Acrylic Sheet', 'MDF Sheet', 'Wood & Plywood', 'Leather & Fabric'],
+    estimatedRatePerSqFt: 100,
+    badge: 'High Precision',
+    image: './cnc_wood.png'
+  },
+  {
+    id: 'cnc-router',
+    title: 'CNC Router & 3D Jaali Carving',
+    category: 'Cutting',
+    iconName: 'Cpu',
+    tagline: 'Precision 2D & 3D CNC lattice & decorative Jaali carving',
     shortDesc: 'Architectural Jaali panels in 12mm/18mm MDF (₹120-170), PVC (₹170-220), and HDHMR (₹150-200).',
-    fullDesc: `Our CNC Router handles 8x4 ft sheets for decorative lattice (Jaali) partitions, wave boards, and architectural wall features.`,
+    fullDesc: `Our CNC Router handles 8x4 ft sheets for decorative lattice (Jaali) partitions, 3D wave boards, temple Mandir panels, and architectural wall features.`,
     features: [
       '12mm MDF Jaali Cutting @ ₹120/sq.ft',
       '18mm MDF Jaali Cutting @ ₹170/sq.ft',
       '12mm PVC Jaali (₹170) & 18mm PVC Jaali (₹220/sq.ft)',
       '12mm HDHMR (₹150) & 18mm HDHMR (₹200/sq.ft)'
     ],
-    materials: ['MDF Board', 'PVC Board', 'HDHMR Board'],
+    materials: ['MDF Board', 'PVC Board', 'HDHMR Board', 'WPC Board'],
     estimatedRatePerSqFt: 120,
-    badge: 'Precision',
+    badge: 'Architectural',
     image: './cnc_wood.png'
   },
   {
@@ -152,8 +171,27 @@ export const servicesData = [
     image: './ss_letters.png'
   },
   {
+    id: 'customized-gifts',
+    title: 'Customized Corporate Gifts & Merchandise',
+    category: 'Gifts & Office',
+    iconName: 'Gift',
+    tagline: 'Personalized mugs, t-shirts, keychains, trophies & promotional gifts',
+    shortDesc: 'Custom printed corporate merchandise including mugs, t-shirts, keychains, mobile covers, and customized gift hampers.',
+    fullDesc: `Boost corporate branding with customized merchandise. High quality sublimation printing and laser engraving on ceramic mugs, apparel, keychains, and trophies.`,
+    features: [
+      'Sublimation Printed Coffee Mugs & Water Bottles',
+      'Custom Screen & DTF Printed Corporate T-Shirts',
+      'Laser Engraved Wooden & Metal Keychains',
+      'Customized Corporate Welcome Kits & Gift Boxes'
+    ],
+    materials: ['Ceramic', 'Cotton Fabric', 'Metal & Wood', 'Acrylic'],
+    estimatedRatePerSqFt: 150,
+    badge: 'Corporate',
+    image: './hero_banner.png'
+  },
+  {
     id: 'neon-signages',
-    title: 'Neon Signage (Flex Neon)',
+    title: 'Neon Signages (12V Flex Neon)',
     category: 'Signage',
     iconName: 'Sparkles',
     tagline: 'Trendy LED flex neon signs for cafes & interior decor',
@@ -171,18 +209,18 @@ export const servicesData = [
     image: './led_neon.png'
   },
   {
-    id: 'readymade-lollipops',
-    title: 'Readymade Lollipop Signs & Roll Up Standies',
+    id: 'flange-board',
+    title: 'Flange Board & Lollipop Signages',
     category: 'Signage',
     iconName: 'Maximize',
-    tagline: 'Readymade double-sided lollipop signs & portable roll up standies',
-    shortDesc: '18"x18" Lollipop (₹1800), 2x2ft Lollipop (₹2500), Roll Up Standy 3x6ft (₹1800), Standy Print Change (₹550).',
+    tagline: 'Double-sided projecting store signs & portable roll-up standies',
+    shortDesc: '18"x18" Lollipop (₹1800), 2x2ft Lollipop (₹2500), Roll Up Standy 3x6ft (₹1800), Flange projecting signs.',
     fullDesc: `Double-sided illuminated lollipop projecting signs and lightweight portable roll-up standies for trade shows and storefront promotion.`,
     features: [
       '18" x 18" Round/Square Lollipop with Print @ ₹1800/pcs',
       '2FT x 2FT Round/Square Lollipop with Print @ ₹2500/pcs',
-      'Roll Up Standy 3x6ft (₹1800/pcs) & 2.5x5ft (₹1500/pcs)',
-      'Roll Up Standy Print Change (₹550 for 3x6ft, ₹450 for 2.5x5ft)'
+      'Projecting Flange Sign Board for sidewalk visibility',
+      'Roll Up Standy 3x6ft (₹1800/pcs) & 2.5x5ft (₹1500/pcs)'
     ],
     materials: ['Acrylic Disc', 'Metal Bracket', 'Aluminum Standy Frame'],
     estimatedRatePerSqFt: 1800,

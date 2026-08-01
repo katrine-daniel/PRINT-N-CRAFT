@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Globe, Send, CheckCircle2, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, CheckCircle2, Clock } from 'lucide-react';
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -103,21 +103,7 @@ export default function ContactSection() {
                     <span>printncraft1@gmail.com</span>
                   </div>
                   <Mail className="w-4 h-4 text-brand-magenta" />
-                </a>
-
-                <a
-                  href="https://www.printncraft.in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-magenta text-slate-900 font-bold text-xs transition-all"
-                >
-                  <div>
-                    <span className="text-[10px] text-slate-400 font-medium block">Website</span>
-                    <span>www.printncraft.in</span>
-                  </div>
-                  <Globe className="w-4 h-4 text-brand-magenta" />
-                </a>
-              </div>
+                </a>              </div>
             </div>
 
             {/* Address */}
@@ -160,7 +146,6 @@ export default function ContactSection() {
                       <input
                         type="text"
                         required
-                        placeholder="John Doe"
                         value={formData.name}
                         onChange={(e) => setFormData({...formData, name: e.target.value})}
                         className="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-brand-cyan font-medium"
@@ -174,7 +159,6 @@ export default function ContactSection() {
                       <input
                         type="tel"
                         required
-                        placeholder="+91 7703967979"
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
                         className="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-brand-cyan font-medium"
@@ -189,7 +173,6 @@ export default function ContactSection() {
                       </label>
                       <input
                         type="email"
-                        placeholder="client@company.com"
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
                         className="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-brand-cyan font-medium"
@@ -228,7 +211,6 @@ export default function ContactSection() {
                     <textarea
                       rows="4"
                       required
-                      placeholder="Specify your dimensions, location, material preference, or budget requirements..."
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       className="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-brand-cyan font-medium"
