@@ -3,16 +3,22 @@ import { ArrowRight, CheckCircle2, PhoneCall } from 'lucide-react';
 
 export default function Hero({ onOpenEstimate }) {
   return (
-    <section id="hero" className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-white border-b border-slate-100">
+    <section id="hero" className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-white border-b border-slate-100 overflow-hidden">
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Seamless Hero Background Image */}
+      <div 
+        className="absolute inset-0 z-0 bg-right bg-cover bg-no-repeat pointer-events-none hidden lg:block"
+        style={{ backgroundImage: `url('./hero_bg.png')` }}
+      ></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Text */}
           <div className="lg:col-span-7 space-y-6">
             
             {/* Top Pill Badge */}
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-semibold text-slate-700">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100/90 backdrop-blur-sm border border-slate-200 text-xs font-semibold text-slate-700">
               <span className="w-2 h-2 rounded-full bg-brand-cyan"></span>
               <span>Gurugram's Premier Printing & Signage Hub <span className="text-[10px] text-slate-500 font-normal ml-0.5">Since 2012</span></span>
             </div>
@@ -24,8 +30,8 @@ export default function Hero({ onOpenEstimate }) {
             </h1>
 
             {/* Paragraph */}
-            <p className="text-base sm:text-lg text-slate-600 max-w-2xl font-normal leading-relaxed">
-              From <span className="text-slate-900 font-medium">3D LED Channel Letters</span> and <span className="text-slate-900 font-medium">Neon Signages</span> to <span className="text-slate-900 font-medium">Laser Cutting, CNC Carving, ACP Facades</span>, and <span className="text-slate-900 font-medium">Custom Corporate Gifts</span>.
+            <p className="text-base sm:text-lg text-slate-700 max-w-2xl font-normal leading-relaxed">
+              From <span className="text-slate-900 font-semibold">3D LED Channel Letters</span> and <span className="text-slate-900 font-semibold">Neon Signages</span> to <span className="text-slate-900 font-semibold">Laser Cutting, CNC Carving, ACP Facades</span>, and <span className="text-slate-900 font-semibold">Custom Corporate Gifts</span>.
             </p>
 
             {/* Bullets */}
@@ -69,10 +75,10 @@ export default function Hero({ onOpenEstimate }) {
             </div>
 
             {/* Metrics */}
-            <div className="pt-8 border-t border-slate-100 grid grid-cols-3 gap-4">
+            <div className="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4">
               <div>
                 <p className="text-2xl sm:text-3xl font-black text-slate-900 font-sans">12+</p>
-                <p className="text-[10px] text-slate-400 font-medium">Years Excellence (2012)</p>
+                <p className="text-[10px] text-slate-500 font-medium">Years Excellence (2012)</p>
               </div>
               <div>
                 <p className="text-2xl sm:text-3xl font-black text-brand-cyan font-sans">5000+</p>
@@ -86,28 +92,14 @@ export default function Hero({ onOpenEstimate }) {
 
           </div>
 
-          {/* Right Image Banner */}
-          <div className="lg:col-span-5 relative">
+          {/* Right Mobile Image Card (Visible on mobile/tablet) */}
+          <div className="lg:col-span-5 relative block lg:hidden">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-clean-lg bg-slate-100">
               <img
-                src="./hero_banner.png"
+                src="./hero_bg.png"
                 alt="Print N Craft Signage Showcase"
-                className="w-full h-[380px] sm:h-[420px] object-cover"
+                className="w-full h-[320px] object-cover object-right"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              
-              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-slate-200 flex items-center justify-between">
-                <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-brand-cyan">Gurugram Manufacturing Unit</span>
-                  <p className="text-xs font-bold text-slate-900">3D LED Signages & Laser Carvings</p>
-                </div>
-                <button
-                  onClick={onOpenEstimate}
-                  className="px-3 py-1.5 rounded-lg bg-slate-900 text-white font-bold text-xs hover:bg-brand-cyan transition-colors"
-                >
-                  Estimate Quote
-                </button>
-              </div>
             </div>
           </div>
 
