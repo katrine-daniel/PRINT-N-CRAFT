@@ -68,6 +68,21 @@ export default function Navbar({ onOpenEstimate }) {
 
           {/* Quick Actions */}
           <div className="hidden sm:flex items-center space-x-2">
+            {/* Glowing PDF Brochure Button */}
+            <a
+              href="./company-profile.pdf"
+              download="PrintNCraft-Company-Profile.pdf"
+              className="relative p-2 rounded-lg bg-rose-50 hover:bg-rose-100 text-brand-magenta border border-rose-200 transition-all flex items-center space-x-1.5 shadow-sm group"
+              title="Download PDF Catalog & Company Profile"
+            >
+              <FileText className="w-4 h-4 text-brand-magenta" />
+              <span className="text-xs font-bold text-slate-900 hidden md:inline">PDF Catalog</span>
+              <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-magenta"></span>
+              </span>
+            </a>
+
             <button
               onClick={onOpenEstimate}
               className="px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-brand-cyan hover:bg-slate-900 transition-all flex items-center space-x-1 shadow-sm"
@@ -85,21 +100,6 @@ export default function Navbar({ onOpenEstimate }) {
             >
               <WhatsAppIcon className="w-4 h-4 text-emerald-600 fill-current" />
               <span className="text-xs font-bold hidden xl:inline">+91 8826239697</span>
-            </a>
-
-            {/* Glowing PDF Brochure Button */}
-            <a
-              href="./company-profile.pdf"
-              download="PrintNCraft-Company-Profile.pdf"
-              className="relative p-2 rounded-lg bg-rose-50 hover:bg-rose-100 text-brand-magenta border border-rose-200 transition-all flex items-center space-x-1.5 shadow-sm group"
-              title="Download PDF Catalog & Company Profile"
-            >
-              <FileText className="w-4 h-4 text-brand-magenta" />
-              <span className="text-xs font-bold text-slate-900 hidden md:inline">PDF Catalog</span>
-              <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-magenta"></span>
-              </span>
             </a>
           </div>
 
