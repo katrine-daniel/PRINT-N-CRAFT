@@ -32,7 +32,6 @@ export default function Navbar({ onOpenEstimate }) {
     { name: 'About', href: '#about' },
     { name: 'Services & Rates', href: '#services' },
     { name: 'Rate Estimator', href: '#calculator' },
-    { name: 'Clients', href: '#clients' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Contact', href: '#contact' },
   ];

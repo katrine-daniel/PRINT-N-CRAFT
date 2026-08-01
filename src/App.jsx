@@ -6,7 +6,6 @@ import VisionMissionValues from './components/VisionMissionValues';
 import ServicesGrid from './components/ServicesGrid';
 import ServiceModal from './components/ServiceModal';
 import EstimateCalculator from './components/EstimateCalculator';
-import ClientsSection from './components/ClientsSection';
 import PortfolioGallery from './components/PortfolioGallery';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -41,7 +40,6 @@ export default function App() {
           onOpenEstimate={(id) => handleOpenEstimate(id)} 
         />
         <EstimateCalculator preselectedServiceId={estimateServiceId} />
-        <ClientsSection />
         <PortfolioGallery onOpenEstimate={() => handleOpenEstimate()} />
         <ContactSection />
       </main>
