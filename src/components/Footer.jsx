@@ -41,9 +41,19 @@ export default function Footer() {
               <li><a href="#about" className="hover:text-brand-cyan transition-colors">About Company</a></li>
               <li><a href="#services" className="hover:text-brand-cyan transition-colors">All 12 Services</a></li>
               <li><a href="#calculator" className="hover:text-brand-cyan transition-colors">Instant Rate Estimator</a></li>
-              <li><a href="#clients" className="hover:text-brand-cyan transition-colors">Corporate Clients</a></li>
               <li><a href="#portfolio" className="hover:text-brand-cyan transition-colors">Work Portfolio</a></li>
               <li><a href="#contact" className="hover:text-brand-cyan transition-colors">Contact Us</a></li>
+              <li>
+                <a 
+                  href={`${import.meta.env.BASE_URL}company-profile.pdf`} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  download="PrintNCraft-Company-Profile.pdf" 
+                  className="text-rose-600 font-bold hover:underline inline-flex items-center gap-1 mt-1"
+                >
+                  📄 Download PDF Brochure
+                </a>
+              </li>
             </ul>
           </div>
 

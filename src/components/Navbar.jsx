@@ -18,6 +18,7 @@ const PdfIcon = ({ className = "w-5 h-5" }) => (
 export default function Navbar({ onOpenEstimate }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pdfUrl = `${import.meta.env.BASE_URL}company-profile.pdf`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,7 +78,9 @@ export default function Navbar({ onOpenEstimate }) {
           <div className="hidden sm:flex items-center space-x-2">
             {/* PDF Brochure Icon Button */}
             <a
-              href="./company-profile.pdf"
+              href={pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               download="PrintNCraft-Company-Profile.pdf"
               className="relative p-2 rounded-lg bg-rose-50 hover:bg-rose-100 text-brand-magenta border border-rose-200 transition-all flex items-center justify-center shadow-sm group"
               title="Download Company Profile & Catalog (PDF)"
