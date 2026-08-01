@@ -10,7 +10,6 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
 export default function Navbar({ onOpenEstimate }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [announcementVisible, setAnnouncementVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,30 +31,6 @@ export default function Navbar({ onOpenEstimate }) {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex flex-col">
-
-      {/* Top Announcement / PDF Download Bar */}
-      {announcementVisible && (
-        <div className="bg-slate-900 text-white px-4 py-2 flex items-center justify-between gap-2 text-xs border-b border-slate-700">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className="hidden sm:inline text-slate-300 font-medium">📄 Download our official company profile & catalog:</span>
-            <a
-              href="/company-profile.pdf"
-              download="PrintNCraft-Company-Profile.pdf"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brand-cyan hover:bg-cyan-400 text-slate-900 font-bold transition-all shadow-sm"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span>Download PDF Brochure</span>
-            </a>
-          </div>
-          <button
-            onClick={() => setAnnouncementVisible(false)}
-            className="p-1 rounded text-slate-400 hover:text-white hover:bg-white/10 transition-all flex-shrink-0"
-            title="Dismiss"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
-      )}
 
     <header className={`transition-all duration-200 ${
       isScrolled ? 'bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm py-3' : 'bg-white/70 backdrop-blur-sm py-4'
@@ -110,6 +85,21 @@ export default function Navbar({ onOpenEstimate }) {
             >
               <WhatsAppIcon className="w-4 h-4 text-emerald-600 fill-current" />
               <span className="text-xs font-bold hidden xl:inline">+91 8826239697</span>
+            </a>
+
+            {/* Glowing PDF Brochure Button */}
+            <a
+              href="./company-profile.pdf"
+              download="PrintNCraft-Company-Profile.pdf"
+              className="relative p-2 rounded-lg bg-rose-50 hover:bg-rose-100 text-brand-magenta border border-rose-200 transition-all flex items-center space-x-1.5 shadow-sm group"
+              title="Download PDF Catalog & Company Profile"
+            >
+              <FileText className="w-4 h-4 text-brand-magenta" />
+              <span className="text-xs font-bold text-slate-900 hidden md:inline">PDF Catalog</span>
+              <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-magenta"></span>
+              </span>
             </a>
           </div>
 
