@@ -3,20 +3,20 @@ import { ArrowRight, CheckCircle2, PhoneCall } from 'lucide-react';
 
 export default function Hero({ onOpenEstimate }) {
   return (
-    <section id="hero" className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-white border-b border-slate-100 overflow-hidden">
-      
-      {/* Seamless Hero Background Image (touches navbar bottom border, reduced from bottom) */}
-      <div 
-        className="absolute top-[68px] inset-x-0 bottom-16 z-0 bg-right bg-cover bg-no-repeat pointer-events-none hidden lg:block"
+    <section id="hero" className="relative pt-28 pb-12 md:pt-36 md:pb-16 bg-white border-b border-slate-100 overflow-hidden">
+
+      {/* Hero Background Image - Covers ONLY the top text area */}
+      <div
+        className="absolute top-[68px] inset-x-0 h-[480px] lg:h-[500px] z-0 bg-right bg-cover bg-no-repeat pointer-events-none hidden lg:block"
         style={{ backgroundImage: `url('./hero_bg.png')` }}
       ></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          {/* Left Text */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[440px]">
+
+          {/* Left Text Area */}
           <div className="lg:col-span-7 space-y-6">
-            
+
             {/* Top Pill Badge */}
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100/90 backdrop-blur-sm border border-slate-200 text-xs font-semibold text-slate-700">
               <span className="w-2 h-2 rounded-full bg-brand-cyan"></span>
@@ -74,25 +74,9 @@ export default function Hero({ onOpenEstimate }) {
               </a>
             </div>
 
-            {/* Metrics */}
-            <div className="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4">
-              <div>
-                <p className="text-2xl sm:text-3xl font-black text-slate-900 font-sans">12+</p>
-                <p className="text-[10px] text-slate-500 font-medium">Years Excellence (2012)</p>
-              </div>
-              <div>
-                <p className="text-2xl sm:text-3xl font-black text-brand-cyan font-sans">5000+</p>
-                <p className="text-xs text-slate-500 font-medium">Projects Delivered</p>
-              </div>
-              <div>
-                <p className="text-2xl sm:text-3xl font-black text-brand-magenta font-sans">13+</p>
-                <p className="text-xs text-slate-500 font-medium">Enterprise Clients</p>
-              </div>
-            </div>
-
           </div>
 
-          {/* Right Mobile Image Card (Visible on mobile/tablet) */}
+          {/* Mobile Fallback Image */}
           <div className="lg:col-span-5 relative block lg:hidden">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-clean-lg bg-slate-100">
               <img
@@ -104,6 +88,23 @@ export default function Hero({ onOpenEstimate }) {
           </div>
 
         </div>
+
+        {/* Metrics Row - Clean White Background Below Text & Image */}
+        <div className="pt-8 mt-10 border-t border-slate-200 grid grid-cols-3 gap-6 max-w-2xl relative z-10 bg-white">
+          <div>
+            <p className="text-2xl sm:text-3xl font-black text-slate-900 font-sans">12+</p>
+            <p className="text-xs text-slate-500 font-medium">Years Excellence (2012)</p>
+          </div>
+          <div>
+            <p className="text-2xl sm:text-3xl font-black text-brand-cyan font-sans">5000+</p>
+            <p className="text-xs text-slate-500 font-medium">Projects Delivered</p>
+          </div>
+          <div>
+            <p className="text-2xl sm:text-3xl font-black text-brand-magenta font-sans">13+</p>
+            <p className="text-xs text-slate-500 font-medium">Enterprise Clients</p>
+          </div>
+        </div>
+
       </div>
     </section>
   );
