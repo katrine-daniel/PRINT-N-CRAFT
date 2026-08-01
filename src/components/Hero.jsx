@@ -5,9 +5,9 @@ export default function Hero({ onOpenEstimate }) {
   return (
     <section id="hero" className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-white border-b border-slate-100 overflow-hidden">
       
-      {/* Seamless Hero Background Image */}
+      {/* Seamless Hero Background Image (starts below navbar) */}
       <div 
-        className="absolute inset-0 z-0 bg-right bg-cover bg-no-repeat pointer-events-none hidden lg:block"
+        className="absolute top-24 md:top-28 inset-x-0 bottom-0 z-0 bg-right bg-cover bg-no-repeat pointer-events-none hidden lg:block"
         style={{ backgroundImage: `url('./hero_bg.png')` }}
       ></div>
 
