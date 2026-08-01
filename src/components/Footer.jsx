@@ -76,9 +76,9 @@ export default function Footer() {
                 <span className="text-[10px] text-slate-400 block">Helpline 3:</span>
                 +91 9654737317
               </a>
-              <a href="mailto:info@printncraft.in" className="block hover:text-brand-cyan transition-colors">
+              <a href="mailto:printncraft1@gmail.com" className="block hover:text-brand-cyan transition-colors">
                 <span className="text-[10px] text-slate-400 block">Email:</span>
-                info@printncraft.in
+                printncraft1@gmail.com
               </a>
             </div>
           </div>

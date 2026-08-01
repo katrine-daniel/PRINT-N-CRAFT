@@ -95,12 +95,12 @@ export default function ContactSection() {
               
               <div className="space-y-2">
                 <a
-                  href="mailto:info@printncraft.in"
+                  href="mailto:printncraft1@gmail.com"
                   className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 hover:border-brand-magenta text-slate-900 font-bold text-xs transition-all"
                 >
                   <div>
                     <span className="text-[10px] text-slate-400 font-medium block">Official Email</span>
-                    <span>info@printncraft.in</span>
+                    <span>printncraft1@gmail.com</span>
                   </div>
                   <Mail className="w-4 h-4 text-brand-magenta" />
                 </a>

@@ -4,8 +4,8 @@ import { MessageSquare, Calculator } from 'lucide-react';
 
 export default function EstimateCalculator({ preselectedServiceId }) {
   const [selectedServiceId, setSelectedServiceId] = useState(preselectedServiceId || servicesData[0].id);
-  const [width, setWidth] = useState(4);
-  const [height, setHeight] = useState(3);
+  const [width, setWidth] = useState('4');
+  const [height, setHeight] = useState('3');
   const [quantity, setQuantity] = useState(1);
   const [includeLed, setIncludeLed] = useState(true);
   const [includeInstallation, setIncludeInstallation] = useState(true);
@@ -18,7 +18,9 @@ export default function EstimateCalculator({ preselectedServiceId }) {
 
   const currentService = servicesData.find(s => s.id === selectedServiceId) || servicesData[0];
 
-  const totalSqFt = Math.max(1, width * height * quantity);
+  const numWidth = parseFloat(width) || 0;
+  const numHeight = parseFloat(height) || 0;
+  const totalSqFt = Math.max(0, numWidth * numHeight * quantity);
   const baseRate = currentService.estimatedRatePerSqFt;
   
   let addOnRate = 0;
@@ -35,7 +37,7 @@ export default function EstimateCalculator({ preselectedServiceId }) {
   const generateWhatsappUrl = () => {
     const text = `Hi Print N Craft! I calculated a project estimate on your website:
 - *Service*: ${currentService.title}
-- *Dimensions*: ${width} ft x ${height} ft (${totalSqFt} sq. ft. total)
+- *Dimensions*: ${numWidth} ft x ${numHeight} ft (${totalSqFt} sq. ft. total)
 - *Quantity*: ${quantity} unit(s)
 - *LED Lighting*: ${includeLed ? 'Yes' : 'No'}
 - *On-site Installation*: ${includeInstallation ? 'Yes' : 'No'}
@@ -95,10 +97,11 @@ Please share official formal quote & timeline.`;
                   </label>
                   <input
                     type="number"
-                    min="1"
-                    max="100"
+                    min="0"
+                    max="999"
+                    placeholder="0"
                     value={width}
-                    onChange={(e) => setWidth(Math.max(1, parseFloat(e.target.value) || 1))}
+                    onChange={(e) => setWidth(e.target.value)}
                     className="w-full p-3 text-xs bg-white border border-slate-200 rounded-xl text-slate-900 font-extrabold focus:outline-none focus:border-brand-cyan shadow-sm"
                   />
                 </div>
@@ -108,10 +111,11 @@ Please share official formal quote & timeline.`;
                   </label>
                   <input
                     type="number"
-                    min="1"
-                    max="100"
+                    min="0"
+                    max="999"
+                    placeholder="0"
                     value={height}
-                    onChange={(e) => setHeight(Math.max(1, parseFloat(e.target.value) || 1))}
+                    onChange={(e) => setHeight(e.target.value)}
                     className="w-full p-3 text-xs bg-white border border-slate-200 rounded-xl text-slate-900 font-extrabold focus:outline-none focus:border-brand-cyan shadow-sm"
                   />
                 </div>
@@ -171,12 +175,12 @@ Please share official formal quote & timeline.`;
                   Estimated Total Budget
                 </span>
 
-                <div className="my-4">
-                  <span className="text-3xl sm:text-4xl font-black text-white">
+                <div className="my-4 flex flex-col items-center gap-1">
+                  <span className="text-2xl sm:text-3xl font-black text-white leading-tight break-all text-center">
                     ₹{minEstimatedCost.toLocaleString('en-IN')}
                   </span>
-                  <span className="text-slate-400 text-xs font-semibold mx-1">to</span>
-                  <span className="text-3xl sm:text-4xl font-black text-brand-cyan">
+                  <span className="text-slate-400 text-xs font-semibold">to</span>
+                  <span className="text-2xl sm:text-3xl font-black text-brand-cyan leading-tight break-all text-center">
                     ₹{maxEstimatedCost.toLocaleString('en-IN')}
                   </span>
                 </div>
