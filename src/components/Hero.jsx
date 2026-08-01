@@ -7,11 +7,11 @@ export default function Hero({ onOpenEstimate }) {
 
       {/* Hero Background Image - Covers top text area with dark overlay */}
       <div
-        className="absolute top-[68px] inset-x-0 h-[480px] lg:h-[960px] z-0 bg-right bg-cover bg-no-repeat pointer-events-none hidden lg:block "
+        className="absolute top-[68px] inset-x-0 h-[480px] lg:h-[960px] z-0 bg-right bg-cover bg-no-repeat pointer-events-none hidden lg:block opacity-30"
         style={{ backgroundImage: `url('./hero_bg.png')` }}
       >
         {/* Subtle Black Overlay */}
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 "></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -93,7 +93,7 @@ export default function Hero({ onOpenEstimate }) {
         </div>
 
         {/* Metrics Row - Clean White Background Below Text & Image */}
-        <div className="pt-8 mt-10 border-t border-slate-200 grid grid-cols-3 gap-6 max-w-2xl relative z-10 bg-white">
+        <div className="pt-8 mt-10  grid grid-cols-3 gap-6 max-w-2xl relative z-10 ">
           <div>
             <p className="text-2xl sm:text-3xl font-black text-slate-900 font-sans">12+</p>
             <p className="text-xs text-slate-500 font-medium">Years Excellence (2012)</p>
