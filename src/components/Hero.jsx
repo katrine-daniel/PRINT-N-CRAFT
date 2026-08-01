@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2, PhoneCall } from 'lucide-react';
 
 export default function Hero({ onOpenEstimate }) {
   return (
-    <section id="hero" className="sticky top-0 z-0 pt-28 pb-16 md:pt-36 md:pb-20 bg-white overflow-hidden">
+    <section id="hero" className="relative pt-28 pb-12 md:pt-36 md:pb-16 bg-white border-b border-slate-100 overflow-hidden">
 
       {/* Hero Background Image - Covers top text area with dark overlay */}
       <div

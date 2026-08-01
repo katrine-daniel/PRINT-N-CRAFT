@@ -3,39 +3,18 @@ import { Calendar, Zap, Users, Check, MapPin, Award, ShieldCheck, Sparkles } fro
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative z-20 -mt-10 sm:-mt-16 rounded-t-[36px] sm:rounded-t-[56px] shadow-[0_-25px_60px_-15px_rgba(0,0,0,0.1)] border-t border-white/90 bg-gradient-to-br from-cyan-50/80 via-yellow-50/40 to-rose-50/60 text-slate-900 py-20 overflow-hidden">
-      
-      {/* CMYK Pastel Mixed Ambient Glow Blobs (Cyan, Magenta, Yellow) */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#00AEEF]/15 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
-      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#EC008C]/12 rounded-full blur-3xl pointer-events-none animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#FFF200]/15 rounded-full blur-3xl pointer-events-none"></div>
-
-      {/* Floating Decorative CMYK Parallax Badges */}
-      <div className="absolute top-16 right-16 opacity-30 pointer-events-none animate-bounce hidden lg:block" style={{ animationDuration: '6s' }}>
-        <div className="flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/90 shadow-sm border border-slate-200/80 text-xs font-bold text-slate-700">
-          <span className="w-2 h-2 rounded-full bg-[#00AEEF]"></span>
-          <span className="w-2 h-2 rounded-full bg-[#EC008C]"></span>
-          <span className="w-2 h-2 rounded-full bg-[#FFF200]"></span>
-          <span className="ml-1 text-[10px]">CMYK Precision</span>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="about" className="py-20 bg-slate-50 relative border-b border-slate-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-cyan px-4 py-1.5 rounded-full bg-white/80 border border-cyan-200 shadow-sm inline-flex items-center gap-2">
-            <span className="flex space-x-1">
-              <span className="w-2 h-2 rounded-full bg-[#00AEEF]"></span>
-              <span className="w-2 h-2 rounded-full bg-[#EC008C]"></span>
-              <span className="w-2 h-2 rounded-full bg-[#FFF200]"></span>
-            </span>
-            <span className="text-slate-800">About Print N Craft</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-brand-cyan px-3 py-1 rounded-full bg-slate-200/60">
+            About Print N Craft
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-4 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">
             Gurugram's Premier Branding & Printing Hub Since 2012
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed font-normal">
+          <p className="text-slate-600 text-sm sm:text-base mt-2">
             Delivering high-precision branding solutions, illuminated signages, 3D laser cuts, and custom corporate products with uncompromised quality.
           </p>
         </div>
