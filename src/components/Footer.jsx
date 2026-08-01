@@ -1,6 +1,14 @@
 import React from 'react';
 import { Printer } from 'lucide-react';
 
+const InstagramIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>
+);
+
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-slate-200 text-slate-600 py-16">
@@ -28,9 +36,52 @@ export default function Footer() {
               Established in 2012, Print N Craft is Gurugram's full-service branding, 3D LED signage, CNC carving, laser cutting & vinyl printing manufacturer.
             </p>
 
-            <div className="pt-2 text-xs text-slate-600">
+            <div className="pt-1 text-xs text-slate-600">
               <p><strong className="text-slate-900">Shop No 101, Village Badshahpur</strong>, near Deewan Palace, Gurugram, Tikli, Haryana 122101</p>
             </div>
+
+            {/* Verified Business Profiles & Social Icons */}
+            <div className="pt-2">
+              <p className="text-[11px] font-bold text-slate-900 uppercase tracking-wider mb-2">Connect & Verified Listings</p>
+              <div className="flex flex-wrap items-center gap-2">
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/printncraft01?igsh=MTlvN2l6OHdnbGRtYg%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-rose-50 text-rose-600 hover:bg-rose-600 hover:text-white border border-rose-200 text-xs font-bold transition-all shadow-xs"
+                  title="Follow Print N Craft on Instagram"
+                >
+                  <InstagramIcon className="w-3.5 h-3.5" />
+                  <span>Instagram</span>
+                </a>
+
+                {/* IndiaMART */}
+                <a
+                  href="https://www.indiamart.com/print-ncraft/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-teal-50 text-teal-700 hover:bg-teal-700 hover:text-white border border-teal-200 text-xs font-bold transition-all shadow-xs"
+                  title="Verified Seller on IndiaMART"
+                >
+                  <span className="font-extrabold text-[10px] bg-teal-600 text-white px-1 rounded">iM</span>
+                  <span>IndiaMART</span>
+                </a>
+
+                {/* Justdial */}
+                <a
+                  href="https://jsdl.in/DT-23TTL51QVV8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 hover:bg-amber-500 hover:text-white border border-amber-200 text-xs font-bold transition-all shadow-xs"
+                  title="Rated Business on Justdial"
+                >
+                  <span className="font-extrabold text-[10px] bg-amber-500 text-white px-1 rounded">JD</span>
+                  <span>Justdial</span>
+                </a>
+              </div>
+            </div>
+
           </div>
 
           {/* Col 2 Quick Links */}

@@ -99,11 +99,11 @@ export default function Hero({ onOpenEstimate }) {
             <p className="text-xs text-slate-500 font-medium">Years Excellence (2012)</p>
           </div>
           <div>
-            <p className="text-2xl sm:text-3xl font-black text-brand-cyan font-sans">5000+</p>
+            <p className="text-2xl sm:text-3xl font-black text-brand-cyan font-sans">50000+</p>
             <p className="text-xs text-slate-500 font-medium">Projects Delivered</p>
           </div>
           <div>
-            <p className="text-2xl sm:text-3xl font-black text-brand-magenta font-sans">13+</p>
+            <p className="text-2xl sm:text-3xl font-black text-brand-magenta font-sans">50+</p>
             <p className="text-xs text-slate-500 font-medium">Enterprise Clients</p>
           </div>
         </div>
