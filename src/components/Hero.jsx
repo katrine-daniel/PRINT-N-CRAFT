@@ -62,10 +62,19 @@ export default function Hero({ onOpenEstimate }) {
                 <ArrowRight className="w-4 h-4" />
               </button>
               <a
-                href="#services"
-                className="px-6 py-3 rounded-lg font-bold text-xs text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition-all"
+                href={`${import.meta.env.BASE_URL}company-profile.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="PrintNCraft-Catalog.pdf"
+                className="px-4 py-3 rounded-lg font-bold text-xs text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 transition-all flex items-center space-x-1.5 shadow-sm"
               >
-                Explore 12 Services
+                <span>📄 PDF Catalog</span>
+              </a>
+              <a
+                href="#services"
+                className="px-5 py-3 rounded-lg font-bold text-xs text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition-all"
+              >
+                Explore Services
               </a>
               <a
                 href="tel:+918826239697"
