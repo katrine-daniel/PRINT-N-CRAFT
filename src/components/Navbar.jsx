@@ -7,6 +7,14 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
   </svg>
 );
 
+const PdfIcon = ({ className = "w-5 h-5" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+    <polyline points="14 2 14 8 20 8" />
+    <text x="6.5" y="16" fontSize="5.5" fontWeight="900" fill="currentColor" stroke="none" fontFamily="sans-serif">PDF</text>
+  </svg>
+);
+
 export default function Navbar({ onOpenEstimate }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -68,15 +76,14 @@ export default function Navbar({ onOpenEstimate }) {
 
           {/* Quick Actions */}
           <div className="hidden sm:flex items-center space-x-2">
-            {/* Glowing PDF Brochure Button */}
+            {/* PDF Brochure Icon Button */}
             <a
               href="./company-profile.pdf"
               download="PrintNCraft-Company-Profile.pdf"
-              className="relative p-2 rounded-lg bg-rose-50 hover:bg-rose-100 text-brand-magenta border border-rose-200 transition-all flex items-center space-x-1.5 shadow-sm group"
-              title="Download PDF Catalog & Company Profile"
+              className="relative p-2 rounded-lg bg-rose-50 hover:bg-rose-100 text-brand-magenta border border-rose-200 transition-all flex items-center justify-center shadow-sm group"
+              title="Download Company Profile & Catalog (PDF)"
             >
-              <FileText className="w-4 h-4 text-brand-magenta" />
-              <span className="text-xs font-bold text-slate-900 hidden md:inline">PDF Catalog</span>
+              <PdfIcon className="w-5 h-5 text-brand-magenta" />
               <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-magenta"></span>
