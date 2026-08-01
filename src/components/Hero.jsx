@@ -5,11 +5,14 @@ export default function Hero({ onOpenEstimate }) {
   return (
     <section id="hero" className="relative pt-28 pb-12 md:pt-36 md:pb-16 bg-white border-b border-slate-100 overflow-hidden">
 
-      {/* Hero Background Image - Covers ONLY the top text area */}
+      {/* Hero Background Image - Covers top text area with dark overlay */}
       <div
-        className="absolute top-[68px] inset-x-0 h-[480px] lg:h-[500px] z-0 bg-right bg-cover bg-no-repeat pointer-events-none hidden lg:block"
+        className="absolute top-[68px] inset-x-0 h-[480px] lg:h-[960px] z-0 bg-right bg-cover bg-no-repeat pointer-events-none hidden lg:block "
         style={{ backgroundImage: `url('./hero_bg.png')` }}
-      ></div>
+      >
+        {/* Subtle Black Overlay */}
+        <div className="absolute inset-0 bg-black/20"></div>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[440px]">
