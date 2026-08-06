@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Send, CheckCircle2, Clock } from 'lucide-react';
+import { servicesData } from '../data/servicesData';
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
-    service: 'LED Sign Board',
+    service: servicesData[0]?.title || 'LED Sign Board / 3D ACP Board',
     message: ''
   });
 
@@ -14,10 +15,20 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const text = `Hi Print N Craft! New Project Inquiry:
+- *Name*: ${formData.name}
+- *Phone*: ${formData.phone}
+- *Email*: ${formData.email || 'N/A'}
+- *Required Service*: ${formData.service}
+- *Details / Dimensions*: ${formData.message}`;
+
+    const whatsappUrl = `https://wa.me/918826239697?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank');
+
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
-      setFormData({ name: '', phone: '', email: '', service: 'LED Sign Board', message: '' });
+      setFormData({ name: '', phone: '', email: '', service: servicesData[0]?.title || 'LED Sign Board / 3D ACP Board', message: '' });
     }, 5000);
   };
 
@@ -199,18 +210,9 @@ export default function ContactSection() {
                         onChange={(e) => setFormData({...formData, service: e.target.value})}
                         className="w-full p-3 text-xs bg-slate-50 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-brand-cyan font-medium"
                       >
-                        <option value="LED Sign Board">LED Sign Board</option>
-                        <option value="GSB Glow Sign Board">GSB Glow Sign Board</option>
-                        <option value="Flex Board Design">Flex Board Design</option>
-                        <option value="Vinyl Printing">Vinyl Printing</option>
-                        <option value="Laser Cutting">Laser Cutting</option>
-                        <option value="CNC Router">CNC Router</option>
-                        <option value="SS Sign Board">SS Sign Board</option>
-                        <option value="ACP Cladding">ACP Cladding</option>
-                        <option value="Name Plate">Name Plate</option>
-                        <option value="Customized Gifts">Customized Gifts</option>
-                        <option value="Neon Signages">Neon Signages</option>
-                        <option value="Flange Board">Flange Board</option>
+                        {(servicesData || []).map((svc) => (
+                          <option key={svc.id} value={svc.title}>{svc.title}</option>
+                        ))}
                       </select>
                     </div>
                   </div>
