@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, MessageSquare, Menu, X, Printer, ChevronRight, Download, FileText, BookOpen } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetHelper';
 
 const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -48,7 +49,7 @@ export default function Navbar({ onOpenEstimate }) {
           {/* Official CMYK Logo */}
           <a href="#hero" className="flex items-center space-x-3 group shrink-0">
             <img 
-              src="./cmyk_logo.jpg" 
+              src={getAssetUrl('cmyk_logo.jpg')} 
               alt="Print N Craft CMYK Logo" 
               className="w-9 h-9 object-contain shrink-0" 
             />

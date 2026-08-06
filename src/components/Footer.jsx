@@ -1,5 +1,6 @@
 import React from 'react';
 import { Printer } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetHelper';
 
 const InstagramIcon = ({ className = "w-4 h-4" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -20,7 +21,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <a href="#hero" className="flex items-center space-x-3 group">
               <img 
-                src="./cmyk_logo.jpg" 
+                src={getAssetUrl('cmyk_logo.jpg')} 
                 alt="Print N Craft CMYK Logo" 
                 className="w-9 h-9 object-contain shrink-0" 
               />

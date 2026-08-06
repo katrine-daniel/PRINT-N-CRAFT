@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle2, PhoneCall } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetHelper';
 
 export default function Hero({ onOpenEstimate }) {
   return (
@@ -74,7 +75,7 @@ export default function Hero({ onOpenEstimate }) {
           {/* Right Side Pure White Background Artisan Illustration - Merges 100% Seamlessly */}
           <div className="lg:col-span-5 hidden lg:block relative z-10">
             <img
-              src="./clean_artisan_hero.jpg"
+              src={getAssetUrl('clean_artisan_hero.jpg')}
               alt="Print N Craft Artisan Workshop"
               className="w-full h-auto object-contain max-h-[480px] ml-auto drop-shadow-xs"
             />

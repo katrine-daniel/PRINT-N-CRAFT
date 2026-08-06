@@ -17,7 +17,7 @@ export const servicesData = [
     materials: ['Acrylic (80/inch)', 'ACP Cladding (260/sqft)', '3D ACP Acrylic (600-800/sqft)', 'LED Modules'],
     estimatedRatePerSqFt: 600,
     badge: 'Best Seller',
-    image: './led_channel.png'
+    image: 'led_channel.png'
   },
   // 2. GSB
   {
@@ -37,7 +37,7 @@ export const servicesData = [
     materials: ['Back Lit Flex', 'GI Frame Box', 'LED/Tube Lights'],
     estimatedRatePerSqFt: 260,
     badge: 'Popular',
-    image: './acp_store.png'
+    image: 'acp_store.png'
   },
   // 3. FLEX PRINTING NORMAL
   {
@@ -57,7 +57,7 @@ export const servicesData = [
     materials: ['Normal Flex Vinyl', 'Eyelets', 'Hemmed Borders'],
     estimatedRatePerSqFt: 15,
     badge: 'Economical',
-    image: './acp_store.png'
+    image: 'acp_store.png'
   },
   // 4. FLEX PRINTING BACKLIT
   {
@@ -77,7 +77,7 @@ export const servicesData = [
     materials: ['Translucent Backlit Flex', 'Solvent UV Ink'],
     estimatedRatePerSqFt: 65,
     badge: 'Illuminated',
-    image: './acp_store.png'
+    image: 'acp_store.png'
   },
   // 5. FLEX PRINTING STARFLEX
   {
@@ -97,7 +97,7 @@ export const servicesData = [
     materials: ['Starflex Media', 'Eco-Solvent Ink'],
     estimatedRatePerSqFt: 35,
     badge: 'Premium Flex',
-    image: './acp_store.png'
+    image: 'acp_store.png'
   },
   // 6. FLEX WITH STANDY FRAME
   {
@@ -117,7 +117,7 @@ export const servicesData = [
     materials: ['MS Iron Pipe Frame', 'High-Resolution Flex Print'],
     estimatedRatePerSqFt: 2000,
     badge: 'Complete Set',
-    image: './led_channel.png'
+    image: 'led_channel.png'
   },
   // 7. NORMAL VINYL PRINT
   {
@@ -137,7 +137,7 @@ export const servicesData = [
     materials: ['Eco-Solvent Vinyl', 'Adhesive Backing'],
     estimatedRatePerSqFt: 60,
     badge: 'Popular',
-    image: './hero_banner.png'
+    image: 'hero_banner.png'
   },
   // 8. UV VINYL PRINT
   {
@@ -157,7 +157,7 @@ export const servicesData = [
     materials: ['UV Vinyl Media', 'UV Cured Inks'],
     estimatedRatePerSqFt: 85,
     badge: 'UV Durable',
-    image: './hero_banner.png'
+    image: 'hero_banner.png'
   },
   // 9. CLEAR VINYL
   {
@@ -177,7 +177,7 @@ export const servicesData = [
     materials: ['Ultra Clear Vinyl Film', 'UV White & Color Ink'],
     estimatedRatePerSqFt: 120,
     badge: 'Glass Special',
-    image: './hero_banner.png'
+    image: 'hero_banner.png'
   },
   // 10. SUNBOARD VINYL 3MM
   {
@@ -197,7 +197,7 @@ export const servicesData = [
     materials: ['3mm Rigid PVC Sunboard', 'Vinyl Graphic Print'],
     estimatedRatePerSqFt: 75,
     badge: '3mm Rigid',
-    image: './hero_banner.png'
+    image: 'hero_banner.png'
   },
   // 11. SUNBOARD VINYL 5MM
   {
@@ -217,7 +217,7 @@ export const servicesData = [
     materials: ['5mm Heavy PVC Sunboard', 'Vinyl Graphic Print'],
     estimatedRatePerSqFt: 85,
     badge: '5mm Sturdy',
-    image: './hero_banner.png'
+    image: 'hero_banner.png'
   },
   // 12. ONE WAY VISION
   {
@@ -237,7 +237,7 @@ export const servicesData = [
     materials: ['Perforated One Way Film', 'Solvent Print'],
     estimatedRatePerSqFt: 75,
     badge: 'Privacy Film',
-    image: './hero_banner.png'
+    image: 'hero_banner.png'
   },
   // 13. CANVAS PRINT
   {
@@ -257,7 +257,7 @@ export const servicesData = [
     materials: ['Artistic Cotton Canvas', 'Archival Inks'],
     estimatedRatePerSqFt: 110,
     badge: 'Art Decor',
-    image: './hero_banner.png'
+    image: 'hero_banner.png'
   },
   // 14. LASER CUTTING
   {
@@ -277,7 +277,7 @@ export const servicesData = [
     materials: ['Acrylic', 'MDF Board', 'Wood & Plywood', 'Leather'],
     estimatedRatePerSqFt: 40,
     badge: 'High Precision',
-    image: './cnc_wood.png'
+    image: 'cnc_wood.png'
   },
   // 15. CNC ROUTER
   {
@@ -297,7 +297,7 @@ export const servicesData = [
     materials: ['MDF', 'PVC', 'HDHMR', 'ACP Sheet', 'Plywood'],
     estimatedRatePerSqFt: 60,
     badge: 'Architectural',
-    image: './cnc_wood.png'
+    image: 'cnc_wood.png'
   },
   // 16. 12MM MDF
   {
@@ -317,7 +317,7 @@ export const servicesData = [
     materials: ['12mm MDF Board'],
     estimatedRatePerSqFt: 130,
     badge: 'Interior Jali',
-    image: './cnc_wood.png'
+    image: 'cnc_wood.png'
   },
   // 17. 18MM MDF
   {
@@ -337,7 +337,7 @@ export const servicesData = [
     materials: ['18mm MDF Board'],
     estimatedRatePerSqFt: 170,
     badge: 'Heavy Jali',
-    image: './cnc_wood.png'
+    image: 'cnc_wood.png'
   },
   // 18. 12MM PVC
   {
@@ -357,7 +357,7 @@ export const servicesData = [
     materials: ['12mm Rigid PVC Foam Board'],
     estimatedRatePerSqFt: 160,
     badge: 'Waterproof',
-    image: './cnc_wood.png'
+    image: 'cnc_wood.png'
   },
   // 19. 18MM PVC
   {
@@ -377,7 +377,7 @@ export const servicesData = [
     materials: ['18mm Heavy PVC Foam Board'],
     estimatedRatePerSqFt: 220,
     badge: 'Exterior PVC',
-    image: './cnc_wood.png'
+    image: 'cnc_wood.png'
   },
   // 20. 12MM HDHMR
   {
@@ -397,7 +397,7 @@ export const servicesData = [
     materials: ['12mm HDHMR Board'],
     estimatedRatePerSqFt: 150,
     badge: 'Moisture Proof',
-    image: './cnc_wood.png'
+    image: 'cnc_wood.png'
   },
   // 21. 18MM HDHMR
   {
@@ -417,7 +417,7 @@ export const servicesData = [
     materials: ['18mm HDHMR Board'],
     estimatedRatePerSqFt: 200,
     badge: 'Premium HDHMR',
-    image: './cnc_wood.png'
+    image: 'cnc_wood.png'
   },
   // 22. SS LETTER
   {
@@ -437,7 +437,7 @@ export const servicesData = [
     materials: ['SS 304 Stainless Steel', 'Stud Mounts'],
     estimatedRatePerSqFt: 160,
     badge: 'Luxury Metal',
-    image: './ss_letters.png'
+    image: 'ss_letters.png'
   },
   // 23. ACRYLIC LETTER
   {
@@ -457,7 +457,7 @@ export const servicesData = [
     materials: ['Cast Acrylic Sheet'],
     estimatedRatePerSqFt: 80,
     badge: 'Popular Letter',
-    image: './ss_letters.png'
+    image: 'ss_letters.png'
   },
   // 24. CHILLENIUM LETTER
   {
@@ -477,7 +477,7 @@ export const servicesData = [
     materials: ['Chillenium Alloy', 'Acrylic Face'],
     estimatedRatePerSqFt: 140,
     badge: 'Sleek Channel',
-    image: './ss_letters.png'
+    image: 'ss_letters.png'
   },
   // 25. ACP CLADDING
   {
@@ -497,7 +497,7 @@ export const servicesData = [
     materials: ['PVDF ACP Sheet', 'GI Frame', 'Silicone Sealant'],
     estimatedRatePerSqFt: 260,
     badge: 'Architectural',
-    image: './acp_store.png'
+    image: 'acp_store.png'
   },
   // 26. NAME PLATE
   {
@@ -517,7 +517,7 @@ export const servicesData = [
     materials: ['Cast Acrylic', 'Vinyl', 'Brass Studs'],
     estimatedRatePerSqFt: 700,
     badge: 'Custom Entrance',
-    image: './ss_letters.png'
+    image: 'ss_letters.png'
   },
   // 27. SANDWICH BOARD
   {
@@ -537,7 +537,7 @@ export const servicesData = [
     materials: ['2x 3mm Clear Acrylic', 'SS Standoff Studs'],
     estimatedRatePerSqFt: 400,
     badge: 'Corporate Display',
-    image: './ss_letters.png'
+    image: 'ss_letters.png'
   },
   // 28. NEON SIGNAGE
   {
@@ -557,7 +557,7 @@ export const servicesData = [
     materials: ['12V Silicon LED Neon', 'Acrylic Sheet', '12V Adapter'],
     estimatedRatePerSqFt: 550,
     badge: 'Trending Decor',
-    image: './led_neon.png'
+    image: 'led_neon.png'
   },
   // 29. FLANGE & LOLLIPOP
   {
@@ -577,7 +577,7 @@ export const servicesData = [
     materials: ['Iron Wall Bracket', 'Acrylic / Flex Face', 'LED Lights'],
     estimatedRatePerSqFt: 550,
     badge: 'Sidewalk Visibility',
-    image: './led_channel.png'
+    image: 'led_channel.png'
   },
   // 30. ROLL-UP STANDY 3x6 FT
   {
@@ -597,7 +597,7 @@ export const servicesData = [
     materials: ['Aluminum Standy Base', 'Non-Curl Banner Media'],
     estimatedRatePerSqFt: 1800,
     badge: 'Standard Event Size',
-    image: './led_channel.png'
+    image: 'led_channel.png'
   },
   // 31. ROLL-UP STANDY 2.5x5 FT
   {
@@ -617,7 +617,7 @@ export const servicesData = [
     materials: ['Aluminum Standy Base', 'Non-Curl Banner Media'],
     estimatedRatePerSqFt: 1500,
     badge: 'Compact Size',
-    image: './led_channel.png'
+    image: 'led_channel.png'
   },
   // 32. VISITING CARD SINGLE SIDE
   {
@@ -637,7 +637,7 @@ export const servicesData = [
     materials: ['300 GSM Art Card', 'Thermal Lamination Film'],
     estimatedRatePerSqFt: 1000,
     badge: '500 Pcs Pack',
-    image: './hero_banner.png'
+    image: 'hero_banner.png'
   },
   // 33. VISITING CARD DOUBLE SIDE
   {
@@ -657,7 +657,7 @@ export const servicesData = [
     materials: ['300 GSM Art Card', 'Thermal Lamination Film'],
     estimatedRatePerSqFt: 1500,
     badge: 'Double Side Pack',
-    image: './hero_banner.png'
+    image: 'hero_banner.png'
   }
 ];
 

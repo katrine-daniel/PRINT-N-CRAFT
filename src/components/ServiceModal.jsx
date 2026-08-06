@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, CheckCircle2, MessageSquare, PhoneCall, Layers, ShieldCheck, Zap, ArrowRight } from 'lucide-react';
+import { getAssetUrl } from '../utils/assetHelper';
 
 export default function ServiceModal({ service, onClose, onOpenEstimate }) {
   if (!service) return null;
@@ -13,13 +14,13 @@ export default function ServiceModal({ service, onClose, onOpenEstimate }) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full bg-slate-100 text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-all"
+          className="absolute top-5 right-5 p-2 rounded-full bg-slate-100 text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-all z-10"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Modal Header */}
-        <div className="flex items-start space-x-4 mb-6">
+        <div className="flex items-start space-x-4 mb-4">
           <div className="w-12 h-12 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center text-brand-cyan shrink-0">
             <Zap className="w-6 h-6" />
           </div>
@@ -33,6 +34,17 @@ export default function ServiceModal({ service, onClose, onOpenEstimate }) {
             <p className="text-xs text-brand-magenta font-semibold mt-0.5">{service.tagline}</p>
           </div>
         </div>
+
+        {/* Service Image Banner */}
+        {service.image && (
+          <div className="mb-4 rounded-2xl overflow-hidden border border-slate-200 max-h-48 bg-slate-100">
+            <img 
+              src={getAssetUrl(service.image)} 
+              alt={service.title}
+              className="w-full h-48 object-cover" 
+            />
+          </div>
+        )}
 
         {/* Description */}
         <div className="space-y-4 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-4">

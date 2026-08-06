@@ -145,7 +145,7 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
 
   return (
     <section id="services" className="py-24 bg-slate-50 relative border-b border-slate-200">
-      <div className="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
@@ -235,8 +235,8 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
               </div>
             </div>
 
-            {/* Services Cards Grid - Dynamic 4 to 5 cards per row */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4.5">
+            {/* Services Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredServices.map((service) => {
                 const IconComponent = iconMap[service.iconName] || Zap;
                 const c = categoryColors[service.category] || defaultColors;
@@ -244,24 +244,22 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
                 return (
                   <div
                     key={service.id}
-                    className={`${c.bg} rounded-2xl p-5 border ${c.border} ${c.hoverBorder} hover:shadow-clean-md transition-all duration-300 flex flex-col justify-between group`}
+                    className={`${c.bg} rounded-2xl p-6 border ${c.border} ${c.hoverBorder} hover:shadow-clean-md transition-all duration-300 flex flex-col justify-between group`}
                   >
                     <div>
-                      <div className="flex items-center justify-between mb-3">
-                        <div className={`w-10 h-10 rounded-xl ${c.iconBg} border ${c.border} flex items-center justify-center ${c.iconText} ${c.iconHoverBg} group-hover:text-white transition-all`}>
+                      <div className="flex items-center justify-between mb-4">
+                        <div className={`w-11 h-11 rounded-xl ${c.iconBg} border ${c.border} flex items-center justify-center ${c.iconText} ${c.iconHoverBg} group-hover:text-white transition-all`}>
                           <IconComponent className="w-5 h-5" />
                         </div>
-                        {service.badge && (
-                          <span className={`text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${c.badgeBg} ${c.badgeText} border ${c.badgeBorder}`}>
-                            {service.badge}
-                          </span>
-                        )}
+                        <span className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${c.badgeBg} ${c.badgeText} border ${c.badgeBorder}`}>
+                          {service.badge}
+                        </span>
                       </div>
 
-                      <span className={`text-[9px] font-bold uppercase tracking-widest ${c.labelText}`}>
+                      <span className={`text-[10px] font-bold uppercase tracking-widest ${c.labelText}`}>
                         {service.category}
                       </span>
-                      <h3 className={`text-base font-bold text-slate-900 mt-0.5 ${c.titleHover} transition-colors line-clamp-2`}>
+                      <h3 className={`text-lg font-bold text-slate-900 mt-0.5 ${c.titleHover} transition-colors`}>
                         {service.title}
                       </h3>
                       <p className="text-xs text-slate-600 mt-2 line-clamp-3 leading-relaxed">
@@ -269,9 +267,9 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
                       </p>
 
                       {/* Material tags */}
-                      <div className="flex flex-wrap gap-1 mt-3">
-                        {(service.materials || []).map((mat, i) => (
-                          <span key={i} className={`text-[9.5px] px-2 py-0.5 rounded-md ${c.tagBg} ${c.tagText} font-medium`}>
+                      <div className="flex flex-wrap gap-1.5 mt-4">
+                        {service.materials.map((mat, i) => (
+                          <span key={i} className={`text-[10px] px-2 py-0.5 rounded-md ${c.tagBg} ${c.tagText} font-medium`}>
                             {mat}
                           </span>
                         ))}
@@ -279,9 +277,9 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
                     </div>
 
                     {/* Footer Action */}
-                    <div className="mt-5 pt-3.5 border-t border-white/60 flex items-center justify-between">
+                    <div className="mt-6 pt-4 border-t border-white/60 flex items-center justify-between">
                       <div>
-                        <span className="text-[9px] text-slate-400 font-medium block">Starting Rate</span>
+                        <span className="text-[10px] text-slate-400 font-medium block">Starting Rate</span>
                         <span className={`text-xs font-bold ${c.labelText}`}>
                           ₹{service.estimatedRatePerSqFt} <span className="text-[9px] text-slate-500 font-normal">/ sq.ft approx</span>
                         </span>
@@ -289,7 +287,7 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
 
                       <button
                         onClick={() => onSelectService(service)}
-                        className={`px-2.5 py-1.5 rounded-lg bg-white/80 ${c.footerBtn} hover:text-white ${c.labelText} text-xs font-bold border ${c.border} transition-all flex items-center space-x-1`}
+                        className={`px-3 py-1.5 rounded-lg bg-white/80 ${c.footerBtn} hover:text-white ${c.labelText} text-xs font-bold border ${c.border} transition-all flex items-center space-x-1`}
                       >
                         <span>Full Specs</span>
                         <ArrowRight className="w-3.5 h-3.5" />
