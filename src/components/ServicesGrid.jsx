@@ -108,7 +108,7 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const categories = ['All', 'Signage', 'Printing', 'Cutting', 'Architecture', 'Gifts & Office'];
+  const categories = ['All', 'Signage', 'Printing', 'Cutting', 'Architecture', 'Gifts & Office', 'Readymade'];
 
   const filteredServices = servicesData.filter(service => {
     const matchesCategory = activeCategory === 'All' || service.category === activeCategory;
@@ -131,7 +131,7 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="text-xs font-bold uppercase tracking-widest text-brand-cyan px-3.5 py-1 rounded-full bg-sky-50 border border-sky-100">
-            12 Specializations & Key Clients
+            {servicesData.length} Specializations & Key Clients
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">
             Our Printing & Crafting Services
