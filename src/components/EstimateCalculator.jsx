@@ -16,12 +16,12 @@ export default function EstimateCalculator({ preselectedServiceId }) {
     }
   }, [preselectedServiceId]);
 
-  const currentService = servicesData.find(s => s.id === selectedServiceId) || servicesData[0];
+  const currentService = (servicesData || []).find(s => s && s.id === selectedServiceId) || (servicesData && servicesData[0]) || { title: 'General Service', estimatedRatePerSqFt: 100, id: 'general' };
 
   const numWidth = parseFloat(width) || 0;
   const numHeight = parseFloat(height) || 0;
   const totalSqFt = Math.max(0, numWidth * numHeight * quantity);
-  const baseRate = currentService.estimatedRatePerSqFt;
+  const baseRate = currentService.estimatedRatePerSqFt || 100;
   
   let addOnRate = 0;
   if (includeLed && !['led-sign-board', 'neon-signages', 'gsb-sign-board'].includes(currentService.id)) {

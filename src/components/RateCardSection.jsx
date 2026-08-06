@@ -6,11 +6,13 @@ export default function RateCardSection({ onOpenEstimate }) {
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredItems = rateCardData.filter((item) => {
+  const filteredItems = (rateCardData || []).filter((item) => {
+    if (!item) return false;
     const matchesCategory = activeCategory === 'all' || item.category === activeCategory;
-    const matchesSearch = item.product.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          item.quantity.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          item.categoryName.toLowerCase().includes(searchQuery.toLowerCase());
+    const q = (searchQuery || '').toLowerCase();
+    const matchesSearch = (item.product || '').toLowerCase().includes(q) ||
+                          (item.quantity || '').toLowerCase().includes(q) ||
+                          (item.categoryName || '').toLowerCase().includes(q);
     return matchesCategory && matchesSearch;
   });
 

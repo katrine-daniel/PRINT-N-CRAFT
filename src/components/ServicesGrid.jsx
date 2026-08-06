@@ -99,6 +99,23 @@ const categoryColors = {
     badgeBorder: 'border-rose-200',
     footerBtn: 'hover:bg-rose-500',
   },
+  'Readymade': {
+    bg: 'bg-indigo-50',
+    border: 'border-indigo-200',
+    hoverBorder: 'hover:border-indigo-400',
+    iconBg: 'bg-indigo-100',
+    iconText: 'text-indigo-600',
+    iconHoverBg: 'group-hover:bg-indigo-500',
+    labelText: 'text-indigo-600',
+    labelBg: 'bg-indigo-50',
+    titleHover: 'group-hover:text-indigo-600',
+    tagBg: 'bg-indigo-100/70',
+    tagText: 'text-indigo-700',
+    badgeBg: 'bg-indigo-100',
+    badgeText: 'text-indigo-800',
+    badgeBorder: 'border-indigo-200',
+    footerBtn: 'hover:bg-indigo-500',
+  },
 };
 
 const defaultColors = categoryColors['Signage'];
@@ -110,11 +127,13 @@ export default function ServicesGrid({ onSelectService, onOpenEstimate }) {
 
   const categories = ['All', 'Signage', 'Printing', 'Cutting', 'Architecture', 'Gifts & Office', 'Readymade'];
 
-  const filteredServices = servicesData.filter(service => {
+  const filteredServices = (servicesData || []).filter(service => {
+    if (!service) return false;
     const matchesCategory = activeCategory === 'All' || service.category === activeCategory;
-    const matchesSearch = service.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          service.shortDesc.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          service.materials.some(m => m.toLowerCase().includes(searchQuery.toLowerCase()));
+    const q = (searchQuery || '').toLowerCase();
+    const matchesSearch = (service.title || '').toLowerCase().includes(q) || 
+                          (service.shortDesc || '').toLowerCase().includes(q) ||
+                          (service.materials || []).some(m => (m || '').toLowerCase().includes(q));
     return matchesCategory && matchesSearch;
   });
 
