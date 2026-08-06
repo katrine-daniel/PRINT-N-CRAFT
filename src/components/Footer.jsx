@@ -38,8 +38,16 @@ export default function Footer() {
               Established in 2012, Print N Craft is Gurugram's full-service branding, 3D LED signage, CNC carving, laser cutting & vinyl printing manufacturer.
             </p>
 
-            <div className="pt-1 text-xs text-slate-600">
+            <div className="pt-1 text-xs text-slate-600 space-y-1">
               <p><strong className="text-slate-900">Shop No 101, Village Badshahpur</strong>, near Deewan Palace, Gurugram, Tikli, Haryana 122101</p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Shop+No+101,+Village+Badshahpur,+near+Deewan+Palace,+Gurugram,+Tikli,+Haryana+122101"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-cyan font-bold hover:underline inline-block text-[11px]"
+              >
+                📍 View Location on Google Maps →
+              </a>
             </div>
 
             {/* Verified Business Profiles & Social Icons */}

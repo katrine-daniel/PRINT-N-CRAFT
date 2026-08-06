@@ -24,7 +24,7 @@ export const servicesData = [
     category: 'Signage',
     iconName: 'Sun',
     tagline: 'Illuminated promotional glow signboards with backlit flex',
-    shortDesc: 'Vibrant backlit glow signboards constructed with translucent flex, GI box frame, and internal lighting.',
+    shortDesc: 'Vibrant backlit glow signboards constructed with translucent flex, GI box frame, and internal lighting (₹260-350/sqft).',
     fullDesc: `GSB (Glow Sign Board) is the classic retail signboard for street visibility. Heavy-duty GI box frames enclosed with tube or LED lighting, overlaid with high-grade backlit flex prints.`,
     features: [
       'Heavy-duty anti-rust iron box frame structure',
@@ -43,15 +43,15 @@ export const servicesData = [
     category: 'Printing',
     iconName: 'Printer',
     tagline: 'Large format outdoor promotional flex banners & event boards',
-    shortDesc: 'High-resolution flex banner printing starting from Normal Flex (₹15-25/sqft), Black Back (₹18/sqft) to Star Flex (₹35/sqft).',
-    fullDesc: `Flex printing is the most economical way to market events, offers, and outdoor banners. Print N Craft uses eco-solvent flex printers up to 10ft width.`,
+    shortDesc: 'High-resolution flex banner printing options: Normal Flex (₹15-25/sqft), Backlit Flex (₹65/sqft), Starflex (₹35/sqft), Flex with Standy Frame (₹2000).',
+    fullDesc: `Flex printing is the most economical way to market events, offers, and outdoor banners. Print N Craft uses eco-solvent flex printers up to 10ft width with durable iron frames and standy options.`,
     features: [
       'Normal Flex Print @ ₹15-25/sq.ft',
-      'Black Back Flex @ ₹18/sq.ft',
-      'Star Flex High Quality @ ₹35/sq.ft',
-      'Flex Front Non-Lit Board @ ₹65/sq.ft'
+      'Starflex Print (High Quality) @ ₹35/sq.ft',
+      'Backlit Flex Print @ ₹65/sq.ft',
+      'Flex Banner with Standy Size Option @ ₹2000/pcs'
     ],
-    materials: ['Normal Flex (₹15-25)', 'Black Back Flex (₹18)', 'Star Flex (₹35)'],
+    materials: ['Normal Flex (₹15-25)', 'Starflex (₹35)', 'Backlit Flex (₹65)', 'Flex Standy Frame (₹2000)'],
     estimatedRatePerSqFt: 15,
     badge: 'Economical',
     image: './acp_store.png'
@@ -61,16 +61,16 @@ export const servicesData = [
     title: 'Vinyl Printing & Sunboard Mounting',
     category: 'Printing',
     iconName: 'Layers',
-    tagline: 'Durable self-adhesive vinyl graphics, UV printing & sunboard mounting',
-    shortDesc: 'Eco-solvent (₹60) & UV Vinyl (₹85), Laminated Vinyl (₹65), Sunboard 3mm (₹75) & 5mm (₹85), One Way Vision (₹75).',
-    fullDesc: `Self-adhesive vinyl graphics for smooth surfaces, shop windows, wall decals, and sunboard backings. Available in Eco Solvent & UV printing options.`,
+    tagline: 'Durable self-adhesive vinyl graphics, UV printing, Canvas & Sunboard mounting',
+    shortDesc: 'Normal Vinyl (₹60), Clear Vinyl (₹120), UV Vinyl (₹85), Sunboard 3mm (₹75) & 5mm (₹85), One Way Vision (₹75), Canvas Print (₹110).',
+    fullDesc: `Self-adhesive vinyl graphics for smooth surfaces, shop windows, wall decals, and sunboard backings. Choose exact thickness (3mm or 5mm) and finish options.`,
     features: [
-      'Vinyl Print Eco Solvent @ ₹60/sq.ft',
-      'UV Vinyl Print @ ₹85/sq.ft',
-      'Vinyl + 3mm Sunboard @ ₹75/sq.ft | 5mm Sunboard @ ₹85/sq.ft',
+      'Normal Vinyl (Eco Solvent) @ ₹60/sq.ft',
+      'Clear Vinyl (UV Clear) @ ₹120/sq.ft | UV Vinyl @ ₹85/sq.ft',
+      'Sunboard Mounting: 3mm Thickness @ ₹75/sq.ft | 5mm Thickness @ ₹85/sq.ft',
       'One Way Vision @ ₹75/sq.ft | Canvas Print @ ₹110/sq.ft'
     ],
-    materials: ['Vinyl Eco Solvent (₹60)', 'UV Vinyl (₹85)', 'Sunboard 3mm (₹75)', 'Sunboard 5mm (₹85)', 'One Way Vision (₹75)'],
+    materials: ['Normal Vinyl (₹60)', 'Clear Vinyl (₹120)', 'Sunboard 3mm (₹75)', 'Sunboard 5mm (₹85)', 'One Way Vision (₹75)', 'Canvas (₹110)'],
     estimatedRatePerSqFt: 60,
     badge: 'Versatile',
     image: './hero_banner.png'
@@ -89,26 +89,26 @@ export const servicesData = [
       'MDF & Wood Sheet Laser Cutting & Stencil Work',
       'Flame-polished smooth acrylic edge finishing'
     ],
-    materials: ['Acrylic Sheet', 'MDF Sheet', 'Wood & Plywood', 'Laser Cutting (₹40/sqft)'],
+    materials: ['Laser Cutting (₹40/sqft)', 'Acrylic Sheet', 'MDF Sheet', 'Wood & Plywood'],
     estimatedRatePerSqFt: 40,
     badge: 'High Precision',
     image: './cnc_wood.png'
   },
   {
     id: 'cnc-router',
-    title: 'CNC Router & 3D Jaali Carving',
+    title: 'CNC Router & 3D Wood Jaali Carving',
     category: 'Cutting',
     iconName: 'Cpu',
     tagline: 'Precision 2D & 3D CNC lattice & decorative Jaali carving',
-    shortDesc: 'Architectural Jaali panels in 12mm MDF (₹130-140), 18mm MDF (₹170-180), 12mm PVC (₹160-170), and 18mm PVC (₹220-230). CNC Router @ ₹60-200/sqft.',
-    fullDesc: `Our CNC Router handles 8x4 ft sheets for decorative lattice (Jaali) partitions, 3D wave boards, temple Mandir panels, and architectural wall features.`,
+    shortDesc: 'Wood Type & Board Options in Jali Cutting: 12mm MDF (₹130-140), 18mm MDF (₹170-180), 12mm PVC (₹160-170), 18mm PVC (₹220-230), 12mm HDHMR (₹150), 18mm HDHMR (₹200).',
+    fullDesc: `Our CNC Router handles 8x4 ft sheets for decorative lattice (Jaali) partitions, 3D wave boards, temple Mandir panels, and architectural wall features in all wood & board types.`,
     features: [
-      'CNC Router Carving @ ₹60-200/sq.ft',
-      '12mm MDF Jaali Cutting @ ₹130-140/sq.ft',
-      '18mm MDF Jaali Cutting @ ₹170-180/sq.ft',
-      '12mm PVC Jaali (₹160-170) & 18mm PVC Jaali (₹220-230/sq.ft)'
+      '12mm MDF Wood Jali @ ₹130-140/sq.ft | 18mm MDF @ ₹170-180/sq.ft',
+      '12mm PVC Board Jali @ ₹160-170/sq.ft | 18mm PVC @ ₹220-230/sq.ft',
+      '12mm HDHMR Board Jali @ ₹150/sq.ft | 18mm HDHMR @ ₹200/sq.ft',
+      'CNC Router Cutting / Carving @ ₹60-200/sq.ft'
     ],
-    materials: ['12mm MDF (₹130-140)', '18mm MDF (₹170-180)', '12mm PVC (₹160-170)', '18mm PVC (₹220-230)'],
+    materials: ['12mm MDF (₹130-140)', '18mm MDF (₹170-180)', '12mm PVC (₹160-170)', '18mm PVC (₹220-230)', '12mm HDHMR (₹150)', '18mm HDHMR (₹200)'],
     estimatedRatePerSqFt: 60,
     badge: 'Architectural',
     image: './cnc_wood.png'
@@ -172,19 +172,19 @@ export const servicesData = [
   },
   {
     id: 'customized-gifts',
-    title: 'Customized Corporate Gifts & Merchandise',
+    title: 'Visiting Cards & Corporate Gifts',
     category: 'Gifts & Office',
     iconName: 'Gift',
-    tagline: 'Personalized mugs, t-shirts, keychains, trophies & promotional gifts',
-    shortDesc: 'Custom printed corporate merchandise including visiting cards (Single side ₹1000/500pcs, Double side ₹1500/500pcs), mugs, t-shirts, keychains.',
-    fullDesc: `Boost corporate branding with customized merchandise. High quality sublimation printing and laser engraving on ceramic mugs, apparel, keychains, and trophies.`,
+    tagline: 'Personalized visiting cards, mugs, t-shirts & corporate hampers',
+    shortDesc: 'Visiting Cards: Single Side (500 pcs) @ ₹1000 | Double Side (500 pcs) @ ₹1500. Custom printed corporate merchandise & trophies.',
+    fullDesc: `Boost corporate branding with customized merchandise. High quality 300 GSM visiting card printing, sublimation printing, and laser engraving.`,
     features: [
-      'Visiting Card Single Side @ ₹1000 per 500 Pcs.',
-      'Visiting Card Double Side @ ₹1500 per 500 Pcs.',
+      'Visiting Card Single Side (500 Pcs.) @ ₹1000',
+      'Visiting Card Double Side (500 Pcs.) @ ₹1500',
       'Sublimation Printed Coffee Mugs & Water Bottles',
       'Custom Screen & DTF Printed Corporate T-Shirts'
     ],
-    materials: ['Visiting Cards (₹1000-1500)', 'Ceramic', 'Cotton Fabric', 'Metal & Wood'],
+    materials: ['Visiting Card Single (₹1000)', 'Visiting Card Double (₹1500)', 'Ceramic', 'Cotton Fabric'],
     estimatedRatePerSqFt: 150,
     badge: 'Corporate',
     image: './hero_banner.png'
@@ -210,19 +210,19 @@ export const servicesData = [
   },
   {
     id: 'flange-board',
-    title: 'Flange Board & Lollipop Signages',
+    title: 'Roll-Up Standies & Lollipop Signages',
     category: 'Signage',
     iconName: 'Maximize',
-    tagline: 'Double-sided projecting store signs & portable roll-up standies',
-    shortDesc: 'Flange & Lollipop Signage @ ₹550/sqft. 18"x18" Lollipop (₹1800), 2x2ft Lollipop (₹2500), Roll Up Standy 3x6ft (₹1800).',
-    fullDesc: `Double-sided illuminated lollipop projecting signs and lightweight portable roll-up standies for trade shows and storefront promotion.`,
+    tagline: 'Roll-up standies with size options & projecting lollipop signs',
+    shortDesc: 'Roll-Up Standy: 3 × 6 ft (₹1800) | 2.5 × 5 ft (₹1500). Flex with Standy Frame (₹2000). Flange & Lollipop (₹550/sqft).',
+    fullDesc: `Double-sided illuminated lollipop projecting signs and lightweight portable roll-up standies available in 3x6 ft and 2.5x5 ft sizes.`,
     features: [
-      'Flange & Lollipop Signage @ ₹550/sq.ft',
-      '18" x 18" Round/Square Lollipop with Print @ ₹1800/pcs',
-      '2FT x 2FT Round/Square Lollipop with Print @ ₹2500/pcs',
-      'Roll Up Standy 3x6ft (₹1800/pcs) & 2.5x5ft (₹1500/pcs)'
+      'Roll-Up Standy (3 × 6 ft) @ ₹1800/pcs',
+      'Roll-Up Standy (2.5 × 5 ft) @ ₹1500/pcs',
+      'Flex Banner with Standy Frame Option @ ₹2000/pcs',
+      'Flange & Lollipop Signage @ ₹550/sq.ft'
     ],
-    materials: ['Acrylic Disc', 'Metal Bracket', 'Aluminum Standy Frame'],
+    materials: ['Roll-Up Standy 3x6ft (₹1800)', 'Roll-Up Standy 2.5x5ft (₹1500)', 'Flex Standy Frame (₹2000)', 'Acrylic Disc'],
     estimatedRatePerSqFt: 550,
     badge: 'Readymade',
     image: './led_channel.png'

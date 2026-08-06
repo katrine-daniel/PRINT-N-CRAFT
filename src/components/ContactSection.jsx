@@ -107,7 +107,7 @@ export default function ContactSection() {
             </div>
 
             {/* Address */}
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
               <div className="flex items-center space-x-2 text-slate-900">
                 <MapPin className="w-5 h-5 text-brand-cyan" />
                 <h3 className="text-sm font-bold">Workshop & Retail Unit</h3>
@@ -115,7 +115,18 @@ export default function ContactSection() {
               <p className="text-xs text-slate-600 leading-relaxed">
                 Shop No 101, Village Badshahpur, near Deewan Palace, Gurugram, Tikli, Haryana 122101, India.
               </p>
-              <div className="pt-2 flex items-center space-x-2 text-[11px] text-slate-500">
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Shop+No+101,+Village+Badshahpur,+near+Deewan+Palace,+Gurugram,+Tikli,+Haryana+122101"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-sky-50 hover:bg-brand-cyan hover:text-white border border-sky-200 text-brand-cyan font-bold text-xs transition-all shadow-xs"
+              >
+                <MapPin className="w-4 h-4" />
+                <span>Open in Google Maps</span>
+              </a>
+
+              <div className="pt-2 flex items-center space-x-2 text-[11px] text-slate-500 border-t border-slate-100">
                 <Clock className="w-4 h-4 text-brand-cyan" />
                 <span>Open Monday - Saturday: 9:30 AM to 8:00 PM</span>
               </div>
