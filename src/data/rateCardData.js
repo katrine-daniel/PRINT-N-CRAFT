@@ -2,7 +2,7 @@ export const rateCardCategories = [
   { id: 'all', name: 'All Categories' },
   { id: 'eco-solvent-uv', name: 'Eco Solvent / UV Printing' },
   { id: 'signage', name: 'Signage' },
-  { id: 'cnc-cutting', name: 'CNC Cutting & Printing' },
+  { id: 'cnc-cutting', name: 'CNC Cutting & Laser' },
   { id: 'readymade', name: 'Readymade Items' }
 ];
 
@@ -14,7 +14,7 @@ export const rateCardData = [
     categoryName: 'Eco Solvent / UV Printing',
     product: 'Vinyl Print (Eco Solvent Print)',
     quantity: 'SQFT',
-    rate: 40,
+    rate: 60,
     unit: 'per SQFT',
     badge: 'Popular'
   },
@@ -24,47 +24,47 @@ export const rateCardData = [
     categoryName: 'Eco Solvent / UV Printing',
     product: 'Vinyl with Lamination (Eco Solvent Print)',
     quantity: 'SQFT',
-    rate: 45,
+    rate: 65,
     unit: 'per SQFT'
   },
   {
     sr: 3,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
-    product: 'Vinyl + 3mm Sunboard',
+    product: 'Sunboard Mounting of Vinyl (3mm)',
     quantity: 'SQFT',
-    rate: 70,
+    rate: 75,
     unit: 'per SQFT'
   },
   {
     sr: 4,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
-    product: 'Vinyl + 5mm Sunboard (Eco Solvent Print)',
+    product: 'Sunboard Mounting of Vinyl (5mm)',
     quantity: 'SQFT',
-    rate: 90,
+    rate: 85,
     unit: 'per SQFT'
   },
   {
-    sr: 7,
+    sr: 5,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'One Way Vision',
     quantity: 'SQFT',
-    rate: 60,
+    rate: 75,
     unit: 'per SQFT'
   },
   {
-    sr: 8,
+    sr: 6,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'UV Vinyl Print',
     quantity: 'SQFT',
-    rate: 90,
+    rate: 85,
     unit: 'per SQFT'
   },
   {
-    sr: 9,
+    sr: 7,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'UV Clear Vinyl Print',
@@ -73,7 +73,7 @@ export const rateCardData = [
     unit: 'per SQFT'
   },
   {
-    sr: 10,
+    sr: 8,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'UV Clear Mirror Vinyl Print',
@@ -82,7 +82,7 @@ export const rateCardData = [
     unit: 'per SQFT'
   },
   {
-    sr: 11,
+    sr: 9,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'Fabric Print with Stitching',
@@ -91,26 +91,27 @@ export const rateCardData = [
     unit: 'per SQFT'
   },
   {
-    sr: 12,
+    sr: 10,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'Canvas Print',
     quantity: 'SQFT',
-    rate: 130,
+    rate: 110,
     unit: 'per SQFT'
   },
   {
-    sr: 13,
+    sr: 11,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'Normal Flex Print',
     quantity: 'SQFT',
-    rate: 10,
+    rate: 15,
+    rateText: '15 - 25',
     unit: 'per SQFT',
     badge: 'Economical'
   },
   {
-    sr: 14,
+    sr: 12,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'Black Back Flex',
@@ -119,7 +120,7 @@ export const rateCardData = [
     unit: 'per SQFT'
   },
   {
-    sr: 15,
+    sr: 13,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'Star Flex',
@@ -128,17 +129,18 @@ export const rateCardData = [
     unit: 'per SQFT'
   },
   {
-    sr: 16,
+    sr: 14,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
-    product: 'GSB Board (Glow Sign Board) (Back Lit Board)',
+    product: 'GSB Board (Glow Sign Board)',
     quantity: 'SQFT',
-    rate: 220,
+    rate: 260,
+    rateText: '260 - 350',
     unit: 'per SQFT',
     badge: 'Best Seller'
   },
   {
-    sr: 17,
+    sr: 15,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'Flex Front Non Lit Board',
@@ -147,7 +149,7 @@ export const rateCardData = [
     unit: 'per SQFT'
   },
   {
-    sr: 18,
+    sr: 16,
     category: 'eco-solvent-uv',
     categoryName: 'Eco Solvent / UV Printing',
     product: 'Back Lit Flex',
@@ -155,55 +157,30 @@ export const rateCardData = [
     rate: 65,
     unit: 'per SQFT'
   },
-  {
-    sr: 19,
-    category: 'eco-solvent-uv',
-    categoryName: 'Eco Solvent / UV Printing',
-    product: 'MS Standy (Print Size 3FT x 4FT)',
-    quantity: '3FT X 5FT',
-    rate: 1800,
-    unit: 'per Pcs.'
-  },
-  {
-    sr: 20,
-    category: 'eco-solvent-uv',
-    categoryName: 'Eco Solvent / UV Printing',
-    product: 'MS Standy (Print Size 3FT x 5FT)',
-    quantity: '3FT X 6FT',
-    rate: 2200,
-    unit: 'per Pcs.'
-  },
-  {
-    sr: 21,
-    category: 'eco-solvent-uv',
-    categoryName: 'Eco Solvent / UV Printing',
-    product: 'MS Standy (Print Size 2.5FT x 3.5FT)',
-    quantity: '2.5FT X 4.5FT',
-    rate: 1500,
-    unit: 'per Pcs.'
-  },
-  {
-    sr: 22,
-    category: 'eco-solvent-uv',
-    categoryName: 'Eco Solvent / UV Printing',
-    product: 'MS Standy (Print Size 2FT x 3FT)',
-    quantity: '2FT X 3.5FT',
-    rate: 1200,
-    unit: 'per Pcs.'
-  },
 
   // SECTION 2: SIGNAGE
   {
     sr: 1,
     category: 'signage',
     categoryName: 'Signage',
-    product: 'ACP Cladding',
+    product: 'LED Signage (3D ACP Acrylic Board)',
     quantity: 'SQFT',
-    rate: 250,
-    unit: 'per SQFT'
+    rate: 600,
+    rateText: '600 - 800',
+    unit: 'per SQFT',
+    badge: 'Best Seller'
   },
   {
     sr: 2,
+    category: 'signage',
+    categoryName: 'Signage',
+    product: 'ACP Cladding',
+    quantity: 'SQFT',
+    rate: 260,
+    unit: 'per SQFT'
+  },
+  {
+    sr: 3,
     category: 'signage',
     categoryName: 'Signage',
     product: '2D ACP Board',
@@ -212,31 +189,21 @@ export const rateCardData = [
     unit: 'per SQFT'
   },
   {
-    sr: 3,
-    category: 'signage',
-    categoryName: 'Signage',
-    product: '3D ACP Acrylic Board',
-    quantity: 'SQFT',
-    rate: 750,
-    unit: 'per SQFT',
-    badge: 'Premium'
-  },
-  {
     sr: 4,
     category: 'signage',
     categoryName: 'Signage',
     product: 'Acrylic Letter',
     quantity: 'INCH',
-    rate: 135,
+    rate: 80,
     unit: 'per Inch'
   },
   {
     sr: 5,
     category: 'signage',
     categoryName: 'Signage',
-    product: 'Millenium Letter',
+    product: 'Chillenium Letter',
     quantity: 'INCH',
-    rate: 170,
+    rate: 140,
     unit: 'per Inch'
   },
   {
@@ -245,7 +212,7 @@ export const rateCardData = [
     categoryName: 'Signage',
     product: 'SS Letter',
     quantity: 'INCH',
-    rate: 250,
+    rate: 160,
     unit: 'per Inch'
   },
   {
@@ -264,6 +231,7 @@ export const rateCardData = [
     product: 'Neon Signage',
     quantity: 'SQFT',
     rate: 550,
+    rateText: '550 - 600',
     unit: 'per SQFT',
     badge: 'Trending'
   },
@@ -271,25 +239,26 @@ export const rateCardData = [
     sr: 9,
     category: 'signage',
     categoryName: 'Signage',
-    product: 'Acrylic Name Plate',
-    quantity: 'SQFT',
-    rate: 1000,
-    unit: 'per SQFT'
+    product: 'Name Plate',
+    quantity: 'PCS.',
+    rate: 700,
+    rateText: '700 - 6000',
+    unit: 'per Pcs.'
   },
   {
     sr: 10,
     category: 'signage',
     categoryName: 'Signage',
-    product: 'Solid Letter Acrylic Name Plate',
+    product: 'Sandwich Board (3mm Double Acrylic)',
     quantity: 'SQFT',
-    rate: 450,
+    rate: 400,
     unit: 'per SQFT'
   },
   {
     sr: 11,
     category: 'signage',
     categoryName: 'Signage',
-    product: 'Sandwich (3mm Double Acrylic with Vinyl Print)',
+    product: 'Flange and Lollipop Signage',
     quantity: 'SQFT',
     rate: 550,
     unit: 'per SQFT'
@@ -312,152 +281,102 @@ export const rateCardData = [
     rate: 550,
     unit: 'per SQFT'
   },
-  {
-    sr: 14,
-    category: 'signage',
-    categoryName: 'Signage',
-    product: 'Fabric Board',
-    quantity: 'SQFT',
-    rate: 650,
-    unit: 'per SQFT'
-  },
-  {
-    sr: 15,
-    category: 'signage',
-    categoryName: 'Signage',
-    product: 'Black Out Signage',
-    quantity: 'SQFT',
-    rate: 650,
-    unit: 'per SQFT'
-  },
 
   // SECTION 3: CNC CUTTING & PRINTING
   {
     sr: 1,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: '12mm MDF Jaali Cutting (Design Charge Extra)',
+    categoryName: 'CNC Cutting & Laser',
+    product: 'Laser Cutting',
     quantity: 'SQFT',
-    rate: 120,
+    rate: 40,
     unit: 'per SQFT'
   },
   {
     sr: 2,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: '18mm MDF Jaali Cutting (Design Charge Extra)',
+    categoryName: 'CNC Cutting & Laser',
+    product: 'CNC Router',
     quantity: 'SQFT',
-    rate: 170,
+    rate: 60,
+    rateText: '60 - 200',
     unit: 'per SQFT'
   },
   {
     sr: 3,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: '12mm PVC Jaali Cutting (Design Charge Extra)',
+    categoryName: 'CNC Cutting & Laser',
+    product: '12mm MDF Jaali Cutting',
     quantity: 'SQFT',
-    rate: 170,
+    rate: 130,
+    rateText: '130 - 140',
     unit: 'per SQFT'
   },
   {
     sr: 4,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: '18mm PVC Jaali Cutting (Design Charge Extra)',
+    categoryName: 'CNC Cutting & Laser',
+    product: '18mm MDF Jaali Cutting',
     quantity: 'SQFT',
-    rate: 220,
+    rate: 170,
+    rateText: '170 - 180',
     unit: 'per SQFT'
   },
   {
     sr: 5,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: '12mm HDHMR Jaali Cutting (Design Charge Extra)',
+    categoryName: 'CNC Cutting & Laser',
+    product: '12mm PVC Jaali Cutting',
     quantity: 'SQFT',
-    rate: 150,
+    rate: 160,
+    rateText: '160 - 170',
     unit: 'per SQFT'
   },
   {
     sr: 6,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: '18mm HDHMR Jaali Cutting (Design Charge Extra)',
+    categoryName: 'CNC Cutting & Laser',
+    product: '18mm PVC Jaali Cutting',
     quantity: 'SQFT',
-    rate: 200,
+    rate: 220,
+    rateText: '220 - 230',
     unit: 'per SQFT'
   },
   {
-    sr: 8,
+    sr: 7,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: 'Visiting Card 300 GSM Paper Single Side',
+    categoryName: 'CNC Cutting & Laser',
+    product: 'Visiting Card Single Side (300 GSM)',
     quantity: '500 PCS.',
     rate: 1000,
     unit: 'per 500 Pcs.'
   },
   {
-    sr: 9,
+    sr: 8,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: 'Visiting Card 300 GSM Paper Double Side',
+    categoryName: 'CNC Cutting & Laser',
+    product: 'Visiting Card Double Side (300 GSM)',
     quantity: '500 PCS.',
     rate: 1500,
     unit: 'per 500 Pcs.'
   },
   {
-    sr: 10,
+    sr: 9,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: 'A5 Pamphlet 90 GSM Paper',
-    quantity: '1000 - 8000 PCS.',
-    rateText: '₹7500 (8k) / ₹4000 (4k) / ₹3000 (2k) / ₹2000 (1k)',
-    rate: 2000,
-    unit: 'starting per 1000 Pcs.'
-  },
-  {
-    sr: 11,
-    category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
+    categoryName: 'CNC Cutting & Laser',
     product: 'Plain Frosted with Installation',
     quantity: 'SQFT',
     rate: 40,
     unit: 'per SQFT'
   },
   {
-    sr: 12,
+    sr: 10,
     category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
+    categoryName: 'CNC Cutting & Laser',
     product: 'Frost Plotter Cut with Installation',
     quantity: 'SQFT',
     rate: 60,
     unit: 'per SQFT'
-  },
-  {
-    sr: 13,
-    category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: 'Coloured Vinyl Plotter Cutting',
-    quantity: 'SQFT',
-    rate: 60,
-    unit: 'per SQFT'
-  },
-  {
-    sr: 14,
-    category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: 'SS Plate Engraving',
-    quantity: 'SQIN',
-    rate: 10,
-    unit: 'per SQIN'
-  },
-  {
-    sr: 15,
-    category: 'cnc-cutting',
-    categoryName: 'CNC Cutting & Printing',
-    product: 'Eggle Stand 5mm Sunboard 2FT x 3FT',
-    quantity: 'PCS.',
-    rate: 1800,
-    unit: 'per Pcs.'
   },
 
   // SECTION 4: READYMADE ITEMS
@@ -465,7 +384,7 @@ export const rateCardData = [
     sr: 1,
     category: 'readymade',
     categoryName: 'Readymade Items',
-    product: '18" x 18" Square or Round Lollipop with Print (Installation Extra)',
+    product: '18" x 18" Square or Round Lollipop with Print',
     quantity: 'PCS.',
     rate: 1800,
     unit: 'per Pcs.'
@@ -474,7 +393,7 @@ export const rateCardData = [
     sr: 2,
     category: 'readymade',
     categoryName: 'Readymade Items',
-    product: '2FT x 2FT Square or Round Lollipop with Print (Installation Extra)',
+    product: '2FT x 2FT Square or Round Lollipop with Print',
     quantity: 'PCS.',
     rate: 2500,
     unit: 'per Pcs.',
@@ -484,8 +403,8 @@ export const rateCardData = [
     sr: 3,
     category: 'readymade',
     categoryName: 'Readymade Items',
-    product: 'Roll Up Standy',
-    quantity: '3FT X 6FT',
+    product: 'Roll Up Standy (3FT X 6FT)',
+    quantity: 'PCS.',
     rate: 1800,
     unit: 'per Pcs.'
   },
@@ -493,27 +412,10 @@ export const rateCardData = [
     sr: 4,
     category: 'readymade',
     categoryName: 'Readymade Items',
-    product: 'Roll Up Standy',
-    quantity: '2.5FT X 5FT',
+    product: 'Roll Up Standy (2.5FT X 5FT)',
+    quantity: 'PCS.',
     rate: 1500,
-    unit: 'per Pcs.'
-  },
-  {
-    sr: 5,
-    category: 'readymade',
-    categoryName: 'Readymade Items',
-    product: 'Roll Up Standy Print Change',
-    quantity: '3FT X 6FT',
-    rate: 550,
-    unit: 'per Pcs.'
-  },
-  {
-    sr: 6,
-    category: 'readymade',
-    categoryName: 'Readymade Items',
-    product: 'Roll Up Standy Print Change',
-    quantity: '2.5FT X 5FT',
-    rate: 450,
     unit: 'per Pcs.'
   }
 ];
+

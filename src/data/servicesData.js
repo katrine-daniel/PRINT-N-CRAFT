@@ -5,16 +5,16 @@ export const servicesData = [
     category: 'Signage',
     iconName: 'Zap',
     tagline: 'High-visibility illuminated architectural & storefront signage',
-    shortDesc: 'Premium 3D ACP Acrylic Boards, LED Backlight Boards, and Channel Letters for commercial storefronts.',
+    shortDesc: 'Premium 3D ACP Acrylic Boards (₹600-800/sqft), LED Backlight Boards, and Channel Letters for commercial storefronts.',
     fullDesc: `At Print N Craft, we build high-impact LED Sign Boards engineered with high-efficiency LED modules and 3D acrylic channel letters mounted on ACP cladding backdrops.`,
     features: [
       '3D Acrylic Channel Letters with IP67 Waterproof LEDs',
+      'LED Signage @ ₹600-800/sq.ft',
       '2D & 3D ACP Sheet Cladding base',
-      'Energy efficient LED drivers',
       'Weather-proof UV protection guarantee'
     ],
-    materials: ['Acrylic (135/inch)', 'ACP Cladding (250/sqft)', '3D ACP Acrylic (750/sqft)', 'LED Modules'],
-    estimatedRatePerSqFt: 750,
+    materials: ['Acrylic (80/inch)', 'ACP Cladding (260/sqft)', '3D ACP Acrylic (600-800/sqft)', 'LED Modules'],
+    estimatedRatePerSqFt: 600,
     badge: 'Best Seller',
     image: './led_channel.png'
   },
@@ -30,10 +30,10 @@ export const servicesData = [
       'Heavy-duty anti-rust iron box frame structure',
       'Backlit flex print facing',
       'Uniform internal illumination with zero dark shadows',
-      'Complete ready-to-mount GSB Board @ ₹220/sqft'
+      'Complete ready-to-mount GSB Board @ ₹260-350/sqft'
     ],
     materials: ['Back Lit Flex', 'GI Frame Box', 'LED/Tube Lights'],
-    estimatedRatePerSqFt: 220,
+    estimatedRatePerSqFt: 260,
     badge: 'Popular',
     image: './acp_store.png'
   },
@@ -43,16 +43,16 @@ export const servicesData = [
     category: 'Printing',
     iconName: 'Printer',
     tagline: 'Large format outdoor promotional flex banners & event boards',
-    shortDesc: 'High-resolution flex banner printing starting from Normal Flex (₹10/sqft), Black Back (₹18/sqft) to Star Flex (₹35/sqft).',
+    shortDesc: 'High-resolution flex banner printing starting from Normal Flex (₹15-25/sqft), Black Back (₹18/sqft) to Star Flex (₹35/sqft).',
     fullDesc: `Flex printing is the most economical way to market events, offers, and outdoor banners. Print N Craft uses eco-solvent flex printers up to 10ft width.`,
     features: [
-      'Normal Flex Print @ ₹15/sq.ft',
+      'Normal Flex Print @ ₹15-25/sq.ft',
       'Black Back Flex @ ₹18/sq.ft',
       'Star Flex High Quality @ ₹35/sq.ft',
       'Flex Front Non-Lit Board @ ₹65/sq.ft'
     ],
-    materials: ['Normal Flex (₹10)', 'Black Back Flex (₹18)', 'Star Flex (₹35)'],
-    estimatedRatePerSqFt: 10,
+    materials: ['Normal Flex (₹15-25)', 'Black Back Flex (₹18)', 'Star Flex (₹35)'],
+    estimatedRatePerSqFt: 15,
     badge: 'Economical',
     image: './acp_store.png'
   },
@@ -62,16 +62,16 @@ export const servicesData = [
     category: 'Printing',
     iconName: 'Layers',
     tagline: 'Durable self-adhesive vinyl graphics, UV printing & sunboard mounting',
-    shortDesc: 'Eco-solvent & UV Vinyl printing, Laminated Vinyl (₹45), Sunboard 3mm/5mm (₹70-₹90), One Way Vision (₹60).',
+    shortDesc: 'Eco-solvent (₹60) & UV Vinyl (₹85), Laminated Vinyl (₹65), Sunboard 3mm (₹75) & 5mm (₹85), One Way Vision (₹75).',
     fullDesc: `Self-adhesive vinyl graphics for smooth surfaces, shop windows, wall decals, and sunboard backings. Available in Eco Solvent & UV printing options.`,
     features: [
-      'Vinyl Print Eco Solvent @ ₹40/sq.ft',
-      'Vinyl + Lamination @ ₹45/sq.ft',
-      'Vinyl + 3mm Sunboard @ ₹70/sq.ft | 5mm Sunboard @ ₹90/sq.ft',
-      'UV Vinyl (₹90) & UV Clear Mirror Vinyl (₹140/sq.ft)'
+      'Vinyl Print Eco Solvent @ ₹60/sq.ft',
+      'UV Vinyl Print @ ₹85/sq.ft',
+      'Vinyl + 3mm Sunboard @ ₹75/sq.ft | 5mm Sunboard @ ₹85/sq.ft',
+      'One Way Vision @ ₹75/sq.ft | Canvas Print @ ₹110/sq.ft'
     ],
-    materials: ['Vinyl (₹40)', 'Sunboard 3mm/5mm', 'One Way Vision (₹60)', 'UV Vinyl'],
-    estimatedRatePerSqFt: 40,
+    materials: ['Vinyl Eco Solvent (₹60)', 'UV Vinyl (₹85)', 'Sunboard 3mm (₹75)', 'Sunboard 5mm (₹85)', 'One Way Vision (₹75)'],
+    estimatedRatePerSqFt: 60,
     badge: 'Versatile',
     image: './hero_banner.png'
   },
@@ -81,16 +81,16 @@ export const servicesData = [
     category: 'Cutting',
     iconName: 'Scissors',
     tagline: 'High-precision CO2 laser cutting for acrylic, wood & metal',
-    shortDesc: 'Precision laser cutting and engraving on acrylic, wood, leather, and metal sheets with micron accuracy.',
+    shortDesc: 'Precision laser cutting (@ ₹40/sqft) and engraving on acrylic, wood, leather, and metal sheets with micron accuracy.',
     fullDesc: `Our industrial CO2 laser cutting machines execute intricate vector designs, custom silhouettes, stencil cutouts, and clear flame-polished acrylic shapes.`,
     features: [
+      'Laser Cutting @ ₹40/sq.ft',
       'Acrylic Laser Cutting (2mm to 20mm thickness)',
       'MDF & Wood Sheet Laser Cutting & Stencil Work',
-      'High-speed intricate vector engraving & marking',
       'Flame-polished smooth acrylic edge finishing'
     ],
-    materials: ['Acrylic Sheet', 'MDF Sheet', 'Wood & Plywood', 'Leather & Fabric'],
-    estimatedRatePerSqFt: 100,
+    materials: ['Acrylic Sheet', 'MDF Sheet', 'Wood & Plywood', 'Laser Cutting (₹40/sqft)'],
+    estimatedRatePerSqFt: 40,
     badge: 'High Precision',
     image: './cnc_wood.png'
   },
@@ -100,16 +100,16 @@ export const servicesData = [
     category: 'Cutting',
     iconName: 'Cpu',
     tagline: 'Precision 2D & 3D CNC lattice & decorative Jaali carving',
-    shortDesc: 'Architectural Jaali panels in 12mm/18mm MDF (₹120-170), PVC (₹170-220), and HDHMR (₹150-200).',
+    shortDesc: 'Architectural Jaali panels in 12mm MDF (₹130-140), 18mm MDF (₹170-180), 12mm PVC (₹160-170), and 18mm PVC (₹220-230). CNC Router @ ₹60-200/sqft.',
     fullDesc: `Our CNC Router handles 8x4 ft sheets for decorative lattice (Jaali) partitions, 3D wave boards, temple Mandir panels, and architectural wall features.`,
     features: [
-      '12mm MDF Jaali Cutting @ ₹120/sq.ft',
-      '18mm MDF Jaali Cutting @ ₹170/sq.ft',
-      '12mm PVC Jaali (₹170) & 18mm PVC Jaali (₹220/sq.ft)',
-      '12mm HDHMR (₹150) & 18mm HDHMR (₹200/sq.ft)'
+      'CNC Router Carving @ ₹60-200/sq.ft',
+      '12mm MDF Jaali Cutting @ ₹130-140/sq.ft',
+      '18mm MDF Jaali Cutting @ ₹170-180/sq.ft',
+      '12mm PVC Jaali (₹160-170) & 18mm PVC Jaali (₹220-230/sq.ft)'
     ],
-    materials: ['MDF Board', 'PVC Board', 'HDHMR Board', 'WPC Board'],
-    estimatedRatePerSqFt: 120,
+    materials: ['12mm MDF (₹130-140)', '18mm MDF (₹170-180)', '12mm PVC (₹160-170)', '18mm PVC (₹220-230)'],
+    estimatedRatePerSqFt: 60,
     badge: 'Architectural',
     image: './cnc_wood.png'
   },
@@ -119,16 +119,16 @@ export const servicesData = [
     category: 'Signage',
     iconName: 'Shield',
     tagline: 'Luxury 3D stainless steel lettering & mirror finish metal signs',
-    shortDesc: 'SS 304 grade metal letters starting at ₹250/inch, SS Back Effect Letters @ ₹370/inch, and Millenium Letters @ ₹170/inch.',
+    shortDesc: 'SS 304 grade metal letters starting at ₹160/inch, Acrylic Letters @ ₹80/inch, Chillenium Letters @ ₹140/inch, and SS Back Effect @ ₹370/inch.',
     fullDesc: `For high-end luxury branding, our Stainless Steel (SS) letters are laser cut and hand crafted in mirror or brushed hairline finish.`,
     features: [
-      'SS Letter @ ₹250/inch',
-      'SS Back Effect Light Letter @ ₹370/inch',
-      'Millenium Letter @ ₹170/inch',
-      'SS Plate Engraving @ ₹10/sq.in'
+      'SS Letter @ ₹160/inch',
+      'Acrylic Letter @ ₹80/inch',
+      'Chillenium Letter @ ₹140/inch',
+      'SS Back Effect Light Letter @ ₹370/inch'
     ],
-    materials: ['SS 304 Grade', 'Titanium Gold', 'Acrylic Base', 'Halo LEDs'],
-    estimatedRatePerSqFt: 250,
+    materials: ['SS 304 Grade (₹160/inch)', 'Acrylic (₹80/inch)', 'Chillenium (₹140/inch)', 'Halo LEDs'],
+    estimatedRatePerSqFt: 160,
     badge: 'Luxury',
     image: './ss_letters.png'
   },
@@ -138,16 +138,16 @@ export const servicesData = [
     category: 'Architecture',
     iconName: 'Building',
     tagline: 'Modern Aluminum Composite Panel exterior cladding',
-    shortDesc: 'Exterior building facade cladding, shop front elevations, and ACP paneling starting at ₹250/sq.ft.',
+    shortDesc: 'Exterior building facade cladding, shop front elevations, and ACP paneling starting at ₹260/sq.ft.',
     fullDesc: `Transform your retail store frontage with PVDF coated weather-resistant ACP panels and structural GI framing.`,
     features: [
-      'ACP Cladding @ ₹250/sq.ft',
+      'ACP Cladding @ ₹260/sq.ft',
       '2D ACP Board @ ₹550/sq.ft',
-      '3D ACP Acrylic Board @ ₹750/sq.ft',
+      '3D ACP Acrylic Board @ ₹600-800/sq.ft',
       'Seamless folding & weather-proof sealant'
     ],
-    materials: ['PVDF ACP Sheet', 'GI Framing', 'Silicone Sealant'],
-    estimatedRatePerSqFt: 250,
+    materials: ['PVDF ACP Sheet (₹260/sqft)', 'GI Framing', 'Silicone Sealant'],
+    estimatedRatePerSqFt: 260,
     badge: 'Architectural',
     image: './acp_store.png'
   },
@@ -157,16 +157,16 @@ export const servicesData = [
     category: 'Gifts & Office',
     iconName: 'Bookmark',
     tagline: 'Acrylic, Solid Letter & Sandwich Acrylic Name Plates',
-    shortDesc: 'Solid Letter Acrylic Name Plate (₹450/sqft), Acrylic Name Plate (₹1000/sqft), Sandwich 3mm Double Acrylic (₹550/sqft).',
+    shortDesc: 'Acrylic Name Plates (₹700 - ₹6000) and Sandwich Board 3mm Double Acrylic (₹400/sqft).',
     fullDesc: `Personalize your home or office entrance with laser-cut 3D acrylic name plates and double-layer sandwich prints.`,
     features: [
-      'Solid Letter Acrylic Name Plate @ ₹450/sq.ft',
-      'Sandwich 3mm Double Acrylic with Vinyl @ ₹550/sq.ft',
-      'Designer Acrylic Name Plate @ ₹1000/sq.ft',
+      'Acrylic Name Plate @ ₹700 - ₹6000',
+      'Sandwich 3mm Double Acrylic Board @ ₹400/sq.ft',
+      'Solid Letter Acrylic Name Plate',
       'Weather-resistant UV print backing'
     ],
-    materials: ['Cast Acrylic', 'Vinyl Print', 'Brass Studs'],
-    estimatedRatePerSqFt: 450,
+    materials: ['Cast Acrylic', 'Sandwich Board (₹400/sqft)', 'Brass Studs'],
+    estimatedRatePerSqFt: 700,
     badge: 'Custom',
     image: './ss_letters.png'
   },
@@ -176,15 +176,15 @@ export const servicesData = [
     category: 'Gifts & Office',
     iconName: 'Gift',
     tagline: 'Personalized mugs, t-shirts, keychains, trophies & promotional gifts',
-    shortDesc: 'Custom printed corporate merchandise including mugs, t-shirts, keychains, mobile covers, and customized gift hampers.',
+    shortDesc: 'Custom printed corporate merchandise including visiting cards (Single side ₹1000/500pcs, Double side ₹1500/500pcs), mugs, t-shirts, keychains.',
     fullDesc: `Boost corporate branding with customized merchandise. High quality sublimation printing and laser engraving on ceramic mugs, apparel, keychains, and trophies.`,
     features: [
+      'Visiting Card Single Side @ ₹1000 per 500 Pcs.',
+      'Visiting Card Double Side @ ₹1500 per 500 Pcs.',
       'Sublimation Printed Coffee Mugs & Water Bottles',
-      'Custom Screen & DTF Printed Corporate T-Shirts',
-      'Laser Engraved Wooden & Metal Keychains',
-      'Customized Corporate Welcome Kits & Gift Boxes'
+      'Custom Screen & DTF Printed Corporate T-Shirts'
     ],
-    materials: ['Ceramic', 'Cotton Fabric', 'Metal & Wood', 'Acrylic'],
+    materials: ['Visiting Cards (₹1000-1500)', 'Ceramic', 'Cotton Fabric', 'Metal & Wood'],
     estimatedRatePerSqFt: 150,
     badge: 'Corporate',
     image: './hero_banner.png'
@@ -195,10 +195,10 @@ export const servicesData = [
     category: 'Signage',
     iconName: 'Sparkles',
     tagline: 'Trendy LED flex neon signs for cafes & interior decor',
-    shortDesc: 'Vibrant 12V LED flex neon custom quote signs & acrylic backdrops @ ₹550/sq.ft.',
+    shortDesc: 'Vibrant 12V LED flex neon custom quote signs & acrylic backdrops @ ₹550-600/sq.ft.',
     fullDesc: `Trendy aesthetic LED neon signs with clear acrylic backing, safe 12V adapter, and dimming remote control.`,
     features: [
-      'Neon Signage @ ₹550/sq.ft',
+      'Neon Signage @ ₹550-600/sq.ft',
       '100% Unbreakable flexible silicon LED flex',
       'Safe 12V DC power consumption',
       'Clear contour acrylic backing'
@@ -214,17 +214,18 @@ export const servicesData = [
     category: 'Signage',
     iconName: 'Maximize',
     tagline: 'Double-sided projecting store signs & portable roll-up standies',
-    shortDesc: '18"x18" Lollipop (₹1800), 2x2ft Lollipop (₹2500), Roll Up Standy 3x6ft (₹1800), Flange projecting signs.',
+    shortDesc: 'Flange & Lollipop Signage @ ₹550/sqft. 18"x18" Lollipop (₹1800), 2x2ft Lollipop (₹2500), Roll Up Standy 3x6ft (₹1800).',
     fullDesc: `Double-sided illuminated lollipop projecting signs and lightweight portable roll-up standies for trade shows and storefront promotion.`,
     features: [
+      'Flange & Lollipop Signage @ ₹550/sq.ft',
       '18" x 18" Round/Square Lollipop with Print @ ₹1800/pcs',
       '2FT x 2FT Round/Square Lollipop with Print @ ₹2500/pcs',
-      'Projecting Flange Sign Board for sidewalk visibility',
       'Roll Up Standy 3x6ft (₹1800/pcs) & 2.5x5ft (₹1500/pcs)'
     ],
     materials: ['Acrylic Disc', 'Metal Bracket', 'Aluminum Standy Frame'],
-    estimatedRatePerSqFt: 1800,
+    estimatedRatePerSqFt: 550,
     badge: 'Readymade',
     image: './led_channel.png'
   }
 ];
+
