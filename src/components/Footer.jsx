@@ -1,5 +1,4 @@
 import React from 'react';
-import { Printer } from 'lucide-react';
 import { getAssetUrl } from '../utils/assetHelper';
 
 const InstagramIcon = ({ className = "w-4 h-4" }) => (

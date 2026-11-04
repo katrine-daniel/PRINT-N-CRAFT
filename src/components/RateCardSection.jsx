@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { rateCardData, rateCardCategories } from '../data/rateCardData';
-import { Search, FileSpreadsheet, MessageSquare, Tag, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Search, FileSpreadsheet, MessageSquare, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function RateCardSection({ onOpenEstimate }) {
   const [activeCategory, setActiveCategory] = useState('all');

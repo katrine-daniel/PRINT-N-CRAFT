@@ -1,5 +1,5 @@
 import React from 'react';
-import { Eye, Compass, HeartHandshake, Quote } from 'lucide-react';
+import { Eye, Compass, HeartHandshake } from 'lucide-react';
 
 export default function VisionMissionValues() {
   return (

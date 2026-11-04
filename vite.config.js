@@ -1,21 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// GitHub Pages serves the site from /PRINT-N-CRAFT/, Vercel serves it from the domain root.
+// Vercel sets VERCEL=1 during its build, so the same repo deploys correctly to both.
 export default defineConfig({
   plugins: [react()],
-  base: '/PRINT-N-CRAFT/',
+  base: process.env.VERCEL ? '/' : '/PRINT-N-CRAFT/',
   server: {
     port: 3000,
-    open: true
+    open: true,
   },
-  build: {
-    rollupOptions: {
-      output: {
-        entryFileNames: `assets/[name]-[hash]-v33.js`,
-        chunkFileNames: `assets/[name]-[hash]-v33.js`,
-        assetFileNames: `assets/[name]-[hash]-v33[extname]`
-      }
-    }
-  }
 })

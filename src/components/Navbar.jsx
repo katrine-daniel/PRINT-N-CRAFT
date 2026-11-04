@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, Menu, X, Printer, ChevronRight, Download, FileText, BookOpen } from 'lucide-react';
+import { Phone, Menu, X, ChevronRight } from 'lucide-react';
 import { getAssetUrl } from '../utils/assetHelper';
 
 const WhatsAppIcon = ({ className = "w-4 h-4" }) => (

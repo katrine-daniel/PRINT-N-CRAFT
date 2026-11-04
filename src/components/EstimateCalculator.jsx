@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { servicesData } from '../data/servicesData';
-import { MessageSquare, Calculator } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
 
 export default function EstimateCalculator({ preselectedServiceId }) {
   const [selectedServiceId, setSelectedServiceId] = useState(preselectedServiceId || servicesData[0].id);

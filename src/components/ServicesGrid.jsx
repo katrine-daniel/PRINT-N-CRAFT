@@ -4,7 +4,7 @@ import { clientsData } from '../data/clientsData';
 import { 
   Zap, Sun, Printer, Layers, Scissors, Cpu, 
   Shield, Building, Bookmark, Gift, Sparkles, Maximize, 
-  Search, ArrowRight, Building2, ShieldCheck, CheckCircle2
+  Search, ArrowRight, Building2, ShieldCheck
 } from 'lucide-react';
 
 const iconMap = {

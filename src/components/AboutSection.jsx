@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Zap, Users, Check, MapPin, Award, ShieldCheck, Sparkles } from 'lucide-react';
+import { Calendar, Zap, Users, Check, MapPin, ShieldCheck } from 'lucide-react';
 
 export default function AboutSection() {
   return (
